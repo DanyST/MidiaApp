@@ -1,0 +1,917 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 1177,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "CIV8DwAAQBAJ",
+   "etag": "rHFYtXmAaSQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/CIV8DwAAQBAJ",
+   "volumeInfo": {
+    "title": "Horóscopo chino 2019",
+    "subtitle": "Año del chancho de tierra. Una voz espiritual",
+    "authors": [
+     "Pedro Engel"
+    ],
+    "publisher": "Editorial Catalonia",
+    "publishedDate": "2018-11-05",
+    "description": "Año a año escribo este libro. No es una tarea fácil, pero mi corazón no renuncia a este rito anual. En el calendario chino existen las doce Ramas Terrestres, las cuales se corresponden con las diferentes energías que surgen de la vitalidad de nuestro planeta y ascienden hacia el Cielo, marcando un ciclo de doce cualidades distintas que se suceden. Cada Rama Terrestre tiene asociado un símbolo chino, el nombre de un animal, uno de los Cinco Elementos y su aspecto es Yin o Yang. Estos animales que forman el zodíaco chino se suceden en el siguiente orden: Rata, Buey, Tigre, Conejo, Dragón, Serpiente, Caballo, Cabra, Mono, Gallo, Perro y Chancho. Desde el 5 de febrero del 2019 y hasta el 24 de enero del 2020 será el reinado del Chancho de Tierra. El Cerdito es benévolo, buena persona, de buen genio, con ganas de pasarlo bien. La energía que trae este animal es La dolce vita. El Chanchito nos invita entre otras cosas, a reír y a compartir con los amigos. El ambiente de relajo del Año del Chancho de Tierra 2019 es el final de un ciclo de los doce signos del zodiaco chino. Es tiempo de un merecido descanso, y una oportunidad de meditar y reflexionar acerca de los años anteriores, para estar preparados y proyectarnos más sabiamente hacia el ciclo que lo sucederá. En estas páginas van mis predicciones para 2019, inspirado en la maravillosa filosofía china. Con humildad y amor se las entrego, recíbanlas con candor y alegría. Feliz Año del Chancho, Jabalí, Cerdo. La respiración es la base de la vida plena. Pedro Engel Bratter",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9789563246865"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "9563246861"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": false
+    },
+    "pageCount": 252,
+    "printType": "BOOK",
+    "categories": [
+     "Body, Mind & Spirit"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.2",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=CIV8DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=CIV8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=CIV8DwAAQBAJ&printsec=frontcover&dq=2019&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=CIV8DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=CIV8DwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 4958.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 4958.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=CIV8DwAAQBAJ&rdid=book-CIV8DwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 4.958E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 4.958E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Hor%C3%B3scopo_chino_2019-sample-epub.acsm?id=CIV8DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=CIV8DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Con humildad y amor se las entrego, recíbanlas con candor y alegría. Feliz Año del Chancho, Jabalí, Cerdo. La respiración es la base de la vida plena. Pedro Engel Bratter"
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "QcWrDwAAQBAJ",
+   "etag": "n7u9cTabn6w",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/QcWrDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Gente normal",
+    "authors": [
+     "Sally Rooney"
+    ],
+    "publisher": "LITERATURA RANDOM HOUSE",
+    "publishedDate": "2019-10-03",
+    "description": "Después de Conversaciones entre amigos, Sally Rooney vuelve a deslumbrarnos con una historia sobre la fascinación mutua entre dos personas que no consiguen encontrarse. Ganador del Costa Novel Award. Ganador del Irish Novel of the Year. Finalista del Man Booker Prize. Finalista del Women's Prize for Fiction. Marianne y Connell son compañeros de instituto pero no se cruzan palabra. Él es uno de los populares y ella, una chica solitaria que ha aprendido a mantenerse alejada del resto de la gente. Todos saben que Marianne vive en una mansión y que la madre de Connell se encarga de su limpieza, pero nadie imagina que cada tarde los dos jóvenes coinciden. Uno de esos días, una conversación torpe dará comienzo a una relación que podría cambiar sus vidas. Gente normal es una historia de fascinación mutua, de amistad y de amor entre dos personas que no consiguen encontrarse, una reflexión sobre la dificultad de cambiar quienes somos. La segunda novela de Sally Rooney acompaña durante años a dos protagonistas magnéticos y complejos, dos jóvenes que llegamos a entender hasta en su contradicción más sonada y en sus más graves malentendidos. Esta es una historia agridulce que muestra como nos conforman el sexo y el poder, el deseo de herir y ser herido, de amar y ser amado. Nuestras relaciones son una conversación a lo largo del tiempo. Nuestros silencios, lo que las define. La crítica ha dicho... «Marianne y Connell se acercan, se alejan, se aman, dudan, cada uno piensa que al otro no le importa lo bastante, se deprimen, sufren, gozan y el vals que nos narra Sally Rooney termina siendo una historia de amor cercana, honesta, pura y bellísima.» Isabel Coixet «Rooney consigue satisfacer a aquellos que nos obsesionamos con Conversaciones entre amigos y, al mismo tiempo, crear algo absolutamente nuevo [...] Es mi escritora favorita de ficción contemporánea.» Lena Dunham «Puede que Gente normal no trate sobre lo que significa ser joven ahora mismo, sino de algo mejor que eso: muestra qué supone ser joven y estar enamorado en cualquier momento. Un clásico del futuro.» The Guardian «Es capaz de poner a sus lectores en un estado de agitación emocional. La atención de Rooney, su rigor y sensibilidad hacia las personas y las relaciones es una incómoda e importante reprimenda. Terminé el libro decidido a mirar el mundo de manera diferente. No conozco un mejor cumplido para atribuirle a una novela.» James Marriott, The Times «La calidad de su pensamiento elimina la necesidad de florituras retóricas. Rooney estira y retuerce sus frases como si fueran esas esculturas de globos. Las palabras son su superpoder.» The New Yorker «Rooney es como uno de esos magos que pueden perforar una sandía con un naipe. Así escribe sobre el amor y la lujuria entre dos jóvenes dañados, solos y anhelantes. Una escritora original que solo está empezando.» The New York Times «Una novela preciosa, profunda e inteligente. Es admirablemente honesta desde el punto de vista emocional y sexual, aunque también es gentil, sabia, aguda y entrañable. Un compasivo y sucinto estudio sobre las innumerables formas en que hombres y mujeres intentan entenderse entre ellos, y cómo fracasan constantemente.» The Observer",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788439736455"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8439736452"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=QcWrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=QcWrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=QcWrDwAAQBAJ&printsec=frontcover&dq=2019&hl=&cd=2&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=QcWrDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QcWrDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6900.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 6900.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=QcWrDwAAQBAJ&rdid=book-QcWrDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.9E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.9E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Gente_normal-sample-epub.acsm?id=QcWrDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Gente_normal-sample-pdf.acsm?id=QcWrDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=QcWrDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "La crítica ha dicho... «Marianne y Connell se acercan, se alejan, se aman, dudan, cada uno piensa que al otro no le importa lo bastante, se deprimen, sufren, gozan y el vals que nos narra Sally Rooney termina siendo una historia de amor ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "MAyhDwAAQBAJ",
+   "etag": "HB8R9cIKi5E",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/MAyhDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Ciudad de mujeres",
+    "authors": [
+     "Elizabeth Gilbert"
+    ],
+    "publisher": "SUMA INTERNACIONAL",
+    "publishedDate": "2019-09-19",
+    "description": "La autora de Come, reza, ama regresa con una deliciosa novela llena de glamur, humor y pasión por la vida. En el verano de 1940 Vivian Morris llega a Manhattan con 19 años y tan solo una maleta y una máquina de coser, empujada por sus desesperados padres. Aunque su especial talento con la aguja y su dedicación a lograr el peinado perfecto no le han servido de gran cosa en la prestigiosa universidad de Vassar, la convertirán en la modista estrella del Lily Playhouse, el decadente teatro de variedades de su poco convencional tía Peg. Los días en Nueva York son de todo menos aburridos a pesar de la guerra. En esta ciudad de mujeres Vivian y sus amigas buscan ser libres y beberse la vida hasta la última gota. Pero Vivian también descubrirá que le quedan lecciones que aprender y amargos errores que cometer, y que para vivir la vida que de verdad desea tendrá que reinventarse a cada paso. «En la vida de una mujer, llega un momento en que se cansa de sentirse culpable todo el rato. Y, a partir de ese momento, es libre de convertirse en quien de verdad es.» Reseñas: «Una novela glamurosa, sexi, fascinante y divertida... Una historia adictiva con personajes femeninos llenos de intensidad y trazados sin pudor. Radical y refrescante.» Sunday Times «Una gloriosa celebración, compleja y emocionalmente inteligente, de lo que significa ser mujer.» Guardian «Perfecta... una novela absorbente y con corazón, que encierra además un potente mensaje sobre la realización personal y la felicidad.» Publishers Weekly «Una novela tan vibrante, sexi y sabia como el superéxito de la autora Come, reza, ama.» People Magazine «Los ingeniosos diálogos de Elizabeth Gilbert resplandecen como diamantes en el champán.» The Washington Post «Deliciosa... Personajes fantásticos, vestidos espléndidos, frases increíblemente ingeniosas, sugerente atmosfera de la época de la guerra y excelentes descripciones del sexo... No se pierdan sus maravillosas novelas ni un minuto más.» Kirkus Reviews «Gilbert traza un fascinante perfil de las aventuras de la joven Vivian, abordando temas como la libertad, la responsabilidad y el empoderamiento que son intemporales y a la vez resultan muy oportunos.» Time «Leer Ciudad de mujeres es una pura delicia, gracias a sus personajes llenos de vida, sus ingeniosos diálogos, sus divertidas y a la vez emotivas tramas, sus escenas auténticamente eróticas, su inteligencia sexual, su suspense y sus incisivas verdades.» Booklist «Una fascinante novela sobre amor, libertad y encontrar tu propia felicidad.» PopSugar «Llena de personajes memorables.» BuzzFeed News «Ferozmente feminista, además de repleta de inspiradores verdades sobre el amor y la libertad, esta historia es a la vez un festín para los sentidos y un bálsamo para el alma.» Esquire.com «Ciudad de mujeres trata sobre mujeres que se sacuden los grilletes del matrimonio y las convenciones sociales para explorar sus deseos.» BBC Radio 4",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788491291879"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8491291873"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=MAyhDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=MAyhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=MAyhDwAAQBAJ&printsec=frontcover&dq=2019&hl=&cd=3&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=MAyhDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=MAyhDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 4900.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 4900.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=MAyhDwAAQBAJ&rdid=book-MAyhDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 4.9E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 4.9E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Ciudad_de_mujeres-sample-epub.acsm?id=MAyhDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Ciudad_de_mujeres-sample-pdf.acsm?id=MAyhDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=MAyhDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Los días en Nueva York son de todo menos aburridos a pesar de la guerra. En esta ciudad de mujeres Vivian y sus amigas buscan ser libres y beberse la vida hasta la última gota."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "T9VjDwAAQBAJ",
+   "etag": "637HA5vya20",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/T9VjDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Palabra de Dios™ 2019",
+    "subtitle": "Lecturas dominicales y reflexiones espirituales",
+    "authors": [
+     "Petra Alexander",
+     "Ruth Bolarte",
+     "Juan Luis Calderón"
+    ],
+    "publisher": "LiturgyTrainingPublications",
+    "description": "Palabra de Dios™ guides you to a deeper understanding of the Sunday Scriptures, providing the readings for this liturgical year, insights from Pastoral leaders, and action steps to strength the Catholic identity in the world. The book also includes prayers and citations for weekday readings.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781616713980"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1616713984"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 160,
+    "printType": "BOOK",
+    "categories": [
+     "Religion"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.0.0.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=T9VjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=T9VjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=T9VjDwAAQBAJ&pg=PP4&dq=2019&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=T9VjDwAAQBAJ&dq=2019&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Palabra_de_Dios_2019.html?hl=&id=T9VjDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=T9VjDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "25 de diciembre de 2018 La Natividad del Señor 24 30 de diciembre de 2018 La \u003cbr\u003e\nSagrada Familia de Jesús, María y José 26 1 de enero de \u003cb\u003e2019\u003c/b\u003e Santa María, \u003cbr\u003e\nMadre de Dios 28 6 de enero de \u003cb\u003e2019\u003c/b\u003e La Epifanía del Señor 30 13 de enero de&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "8liwDwAAQBAJ",
+   "etag": "X5phb7NK8gs",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/8liwDwAAQBAJ",
+   "volumeInfo": {
+    "title": "E-Pack Bianca octubre 2019",
+    "authors": [
+     ", Varias Autoras"
+    ],
+    "publisher": "HarperCollins Ibérica",
+    "publishedDate": "2019-10-01",
+    "description": "El viaje del deseo Julia James Su romance era tórrido... ¡y tuvo consecuencias escandalosas! Un oasis de pasión Susan Stephens Una noche de pasión... ¡con inesperadas consecuencias! Inocencia y placer Rachael Thomas La condición impuesta por el griego... ¡era que ella llevase su anillo de diamantes! Celos desatados Chantelle Shaw Seducida por placer... Reclamada por su hijo",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788413287645"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8413287642"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 640,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=8liwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=8liwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=8liwDwAAQBAJ&printsec=frontcover&dq=2019&hl=&cd=5&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=8liwDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=8liwDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6640.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 6640.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=8liwDwAAQBAJ&rdid=book-8liwDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.64E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.64E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/E_Pack_Bianca_octubre_2019-sample-epub.acsm?id=8liwDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/E_Pack_Bianca_octubre_2019-sample-pdf.acsm?id=8liwDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=8liwDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "El viaje del deseo Julia James Su romance era tórrido... ¡y tuvo consecuencias escandalosas!"
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "hLeZDwAAQBAJ",
+   "etag": "Lu9N0CcCwlk",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/hLeZDwAAQBAJ",
+   "volumeInfo": {
+    "title": "RESOLUCION MISCELANEA FISCAL 2019",
+    "authors": [
+     "Ediciones Fiscales ISEF "
+    ],
+    "publisher": "Ediciones Fiscales ISEF",
+    "description": "Resolución Miscelánea Fiscal, es la mejor en su género y la mas completa. Publicada en el D.O.F. del 29 de abril de 2019. Contenido: Resolución Miscelánea Fiscal para 2019. Anexos 1, 5 y 8. Guía de Trámites Fiscales (Anexo 1-A). Ley para Determinar el Valor de la Unidad de Medida y Actualización. Decreto que Compila Diversos Beneficios Fiscales y Establece Medidas de Simplificación Administrativa. Indicadores Fiscales: Salarios Mínimos 2019. Cuotas Obrero-Patronales de la Ley del Seguro Social. Indice Nacional de Precios al Consumidor. Costo Porcentual Promedio de Captación. Límite de Causación de Recargos y Tasas de Recargos e Intereses. Tasa de Recargos en la Ciudad de México. Tipo de Cambio.",
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 944,
+    "printType": "BOOK",
+    "categories": [
+     "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=hLeZDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=hLeZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=hLeZDwAAQBAJ&pg=PT424&dq=2019&hl=&cd=6&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=hLeZDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=hLeZDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6821.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 6821.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=hLeZDwAAQBAJ&rdid=book-hLeZDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.821E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.821E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/RESOLUCION_MISCELANEA_FISCAL_2019-sample-epub.acsm?id=hLeZDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/RESOLUCION_MISCELANEA_FISCAL_2019-sample-pdf.acsm?id=hLeZDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=hLeZDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "El aviso a que se refiere la regla 11.4.2. podrá presentarse a más tardar el 30 de \u003cbr\u003e\njunio de \u003cb\u003e2019\u003c/b\u003e. Para los efectos del párrafo anterior, los contribuyentes que \u003cbr\u003e\nhayan presentado el aviso a que se refiere la regla 11.4.2., a partir de 28 de \u003cbr\u003e\nmarzo&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "n6WoDwAAQBAJ",
+   "etag": "UOmNC13Cljg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/n6WoDwAAQBAJ",
+   "volumeInfo": {
+    "title": "SMIA Perspecitvas de Cosechas y Situación Alimentaria #2, Julio 2019",
+    "subtitle": "Informe trimestral mundial",
+    "authors": [
+     "Organización de las Naciones Unidas para la Alimentación y la Agricultura"
+    ],
+    "publisher": "Food & Agriculture Org.",
+    "publishedDate": "2019-08-02",
+    "description": "La FAO estima que en todo el mundo 41 países -de los cuales 31 están en África-, necesitan ayuda alimentaria externa. Los conflictos permanentes siguen siendo la principal causa de los elevados niveles de inseguridad alimentaria severa. También las condiciones climáticas adversas y los consiguientes impactos en la producción agrícola han afectado gravemente la disponibilidad y el acceso a los alimentos.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9789251316993"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "9251316996"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 44,
+    "printType": "BOOK",
+    "categories": [
+     "Political Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=n6WoDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=n6WoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=n6WoDwAAQBAJ&pg=PA12&dq=2019&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.cl/books?id=n6WoDwAAQBAJ&dq=2019&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/SMIA_Perspecitvas_de_Cosechas_y_Situaci.html?hl=&id=n6WoDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=n6WoDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Trigo Cereales secundarios Arroz (cáscara) Promedio 5 años 2018 estim. \u003cb\u003e2019\u003c/b\u003e \u003cbr\u003e\npronóst. Promedio 5 años 2018 estim. \u003cb\u003e2019\u003c/b\u003e pronóst. Promedio 5 años 2018 \u003cbr\u003e\nestim. \u003cb\u003e2019\u003c/b\u003e pronóst. África del Norte 19,2 21,3 19,8 12,7 13,8 12,8 6,0 5,0 5,1 \u003cbr\u003e\nArgelia&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "PJyHDwAAQBAJ",
+   "etag": "lVMZxFKJiBI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/PJyHDwAAQBAJ",
+   "volumeInfo": {
+    "title": "PAGOS MENSUALES DEL IVA 2019",
+    "subtitle": "tasas en 2019 con casos prácticos",
+    "authors": [
+     "C.P. Jaime Domínguez Orozco"
+    ],
+    "publisher": "Ediciones Fiscales ISEF",
+    "description": "Esta obra presenta en forma práctica y sencilla las disposiciones de la Ley del IVA y su reglamento, el Código Fiscal, reglas y criterios del SAT, para determinar los PAGOS MENSUALES DEL IVA que ayuden al contribuyente a operar en un marco de seguridad fiscal y evite incurrir en cargas fiscales y financieras innecesarias. Continuación: ABREVIATURAS CAPITULO I. CONCEPTO Y JUSTIFICACION DEL PA-GO MENSUAL DEL IVA 1. Antecedentes. 2. Concepto del pago provisional hasta 2002. 3. Cálculo mensual del impuesto a partir de 2003. 4. Efecto financiero y administrativo. 5. Reformas fiscales. 5.1. Reforma fiscal 2001. 5.2. Reforma fiscal 2002. 5.3. Reforma fiscal 2003. 5.4. Reforma fiscal 2004. 5.5. Reforma fiscal 2005. 5.6. Reforma fiscal 2006. 5.7. Reforma fiscal junio y julio de 2006. 5.8. Reforma fiscal 2007. 5.9. Reforma fiscal 2008 y nuevos impuestos. 5.10. Reforma fiscal 2009 (sin reforma fiscal). 5.11. Reforma fiscal 2010. 5.12. No hay Reforma fiscal en 2011. 5.13. Reforma fiscal 2012. 5.14. No hay Reforma fiscal 2013. 5.15. Reforma fiscal 2014. 5.16. No hay Reforma fiscal en 2015. 5.17. Reforma fiscal 2016. 5.18. Reforma fiscal 2017. 5.19. No hay Reforma fiscal en 2018. 5.20. No hay Reforma fiscal en 2019. CAPITULO II. ELEMENTOS DEL IMPUESTO AL VALOR AGREGADO 1. Objeto del IVA. 2. Sujetos del IVA. 3. Base del IVA. 4. Tasa del IVA. 4.1. Tasa General del 16%. 4.2. Tasa del 0%. 5. Diferencia entre tasa del 0% y exentos. 6. Enajenaciones a tasa 0%. 6.1. Enajenación de alimentos gravados a la tasa general del 16%. 6.1.1. Productos destinados a la alimentación que son gravados. 6.2. Estímulo fiscal del 100% del IVA para jugos, néctares y otras bebidas y agua no gaseosa en envases menores de 10 litros. 6.3. Consumo de alimentos gravados a la tasa general. 6.4. Alimentos que no se consideran preparados para su consumo en el lugar de su enajenación. 6.5. Otras enajenaciones a tasa del 0% (incisos e) al h)). 6.6. Libros, periódicos y revistas con tasa 0%. 6.7. Prestación de servicios a tasa del 0%. 6.8. Uso o goce temporal de maquinaria a tasa del 0%. 6.9. Exportación a tasa del 0%. 7. Traslado del IVA. 8. Retención del IVA. 8.1. Instituciones de crédito que adquieran bienes mediante dación en pago. 8.2. Retención por pago de honorarios o rentas a personas físicas. 8.2.1. No procede la retención del IVA por servicios prestados como actividad empresarial. 8.3. Retención por adquisición de desperdicios. 8.4. Retención del IVA por servicios de autotransporte terrestre de bienes. 8.4.1. Retención del IVA aplicable a los servicios de transporte terrestre de pasajeros o entrega de alimentos. 8.5. Retención del IVA por comisionistas cuando sean personas físicas. 8.6. Retención del IVA a residentes en el extranjero. 8.7. IMMEX y maquiladoras. 8.8. No retención del IVA por la Federación y sus organismos descentralizados. 8.9. Obligados sustitutos por la retención del IVA. 8.10. Momento de la retención y entero del IVA retenido. 8.11. Retención menor del IVA. 8.12. Retención IVA por notarios y demás fedatarios. 8.13. Emitir CFDI por retenciones. Decreto de estímulos fiscales región fronteriza norte en aplicar el 50% como crédito de la tasa del IVA del 16%. CAPITULO III. ACTOS O ACTIVIDADES QUE SON OBJETO DEL IVA 1. Enajenación. 1.1. Transmisión de la propiedad. 1.2. Faltante de inventarios. 1.3. Transmisiones de propiedad que no se consideran enajenación. 1.4. Permuta de bienes. 1.5. Transmisiones no consumadas. 1.6. Enajenaciones exentas. 1.6.1. Enajenación del suelo exenta. 1.6.2. Enajenación exenta de construcciones destinadas para casa habitación. 1.6.3. Exentos los servicios de construcción de casa habitación. 1.6.4. Enajenación de libros, periódicos y revistas exentas. 1.6.5. Exentas las enajenaciones de bienes muebles usados. 1.6.6. Exención por la enajenación de billetes de lotería. 1.6.7. Exención en la enajenación de moneda nacional y extranjera. 1.6.8. Exención en la enajenación de acciones y documentos pendientes de cobro. 1.6.9. Exención de la enajenación de certificados de participación inmobiliaria (CPI). 1.6.10. Exención por la enajenación de lingotes de oro. 1.6.11. Enajenación de bienes entre residentes en el extranjero. 1.7. Actos o actividades no afectos al IVA 1.8. Enajenaciones efectuadas en territorio nacional. 1.9. Enajenaciones de bienes sujetas a matrículas o registros mexicanos. 1.10. Enajenación de bienes intangibles. 1.11. Momento en que ocurre la enajenación. 2. De la prestación de servicios. 2.1. Obligaciones de hacer. 2.2. El transporte. 2.3. Transporte internacional. 2.4. Transporte aéreo internacional. 2.5. Retención del IVA por servicios de transporte. 2.6. El seguro. 2.7. El mandato y la comisión. 2.7.1. Retención del IVA al comisionista. 2.7.2. Comisionistas de la lotería nacional. 2.8. Asistencia técnica. 2.9. Obligaciones de dar, de no hacer o de permitir. 2.10. Los sueldos y asimilados a sueldos no son gravados por el IVA. 2.11. Servicios personales independientes. 2.12. Servicios exentos. 2.12.1. Exentas las comisiones en créditos hipotecarios. 2.12.2. Exentas las comisiones que cobren las AFORES. 2.12.3. Exentos los servicios gratuitos. 2.12.4. Exentos los servicios de enseñanza. 2.12.5. Exento el transporte público terrestre de personas en áreas urbanas. 2.12.6. Exento el transporte marítimo internacional de bienes. 2.12.7. Exentos los seguros agropecuarios y de vida. 2.12.8. Exención de intereses relacionados con actividades exentas o tasa del 0%. 2.12.9. Intereses exentos que reciban o paguen las instituciones de crédito. 2.12.10. Intereses gravados que se paguen a instituciones de crédito. 2.12.11. Intereses exentos que reciban las instituciones de fianzas. 2.12.12. Intereses exentos que provengan de créditos hipotecarios. 2.12.13. Intereses exentos de cajas de ahorro. 2.12.14. Intereses exentos que deriven de obligaciones. 2.12.15. Intereses exentos que reciban o paguen instituciones públicas. 2.12.16. Intereses exentos que deriven de valores a cargo del Gobierno Federal. 2.12.17. Intereses exentos que deriven de títulos colocados entre el gran público inversionista. 2.12.18. Ingresos exentos de operaciones financieras derivadas. 2.12.19. Ingresos exentos por servicios de partidos políticos, sindicatos, cámaras, asociaciones patronales, colegios de profesionales, etcétera. 2.12.20. Exentos los espectáculos públicos. 2.12.21. Ingresos exentos los honorarios médicos. 2.12.22. Servicios médicos exentos. 2.12.23. Exentos los derechos de autor. 2.13. Prestación de servicios en territorio nacional. 2.13.1. Tarjetas de crédito. 2.14. Momento en que se considera prestado el servicio. 3. Del uso o goce temporal de bienes. 3.1. Prestación del servicio de tiempo compartido. 3.2. Exención de renta de casa habitación. 3.2.1. Exención por uso de fincas agrícolas y ganaderas. 3.2.2. Gravada el uso o goce de bienes tangibles del extranjero entregados en territorio nacional 3.2.3. Exención por uso de libros, periódicos y revistas. 3.3. Concesión de uso o goce de bienes en territorio nacional. 3.4. Momento en que se considera efectuado el uso o goce temporal de bienes. 4. De la importación de bienes y servicios. 4.1. Introducción de bienes al país. 4.1.1. Introducción al país de bienes de importación temporal. 4.2. Importación de bienes intangibles. 4.3. Importación del uso o goce de bienes intangibles. 4.4. Importación del uso o goce de bienes tangibles. 4.5. Importación de servicios. 4.6. Retorno de exportaciones temporales. 4.7. Exentas las importaciones temporales, retorno de bienes, etcétera. 4.7.1. Bienes de importación destinados a regímenes aduaneros 4.7.2. Exentos la importación de equipos y menajes de casa. 4.7.3. Importaciones exentas de bienes no gravadas con IVA. 4.7.4. Otras importaciones exentas. 4.7.5. Importación exenta de vehículos. 4.7.6. Importación definitiva al destinarse a los regímenes aduaneros. Por los que se haya pagado el IVA 4.8. Momento en que se considera efectuada la importación. 4.8.1. Momento en que se considera efectuada la importación de bienes intangibles o uso o goce de bienes tangibles. 4.8.2. Momento en que se considera efectuada la importación de servicios. 4.9. Valor gravable en importación de Bienes Tangibles 4.10. Pago del impuesto por importaciones. 4.11. Crédito fiscal en la introducción de bienes a regímenes aduaneros de importación temporal. 5. De la exportación de bienes o servicios. 5.1. Exportaciones definitivas. 5.2. Exportación de bienes intangibles. 5.3. Exportación del uso o goce temporal de bienes. 5.4. Exportación de servicios. 5.4.1. Exportación de tecnología de la información. 5.5. Exportación de transportación internacional. 5.6. Transportación aérea internacional. 5.7. Servicios de hotelería y conexos para congresos, convenciones, exportaciones o ferias. 5.8. Exportación de servicios personales independientes. 5.9. Tasa del impuesto y acreditamiento por exportación. 5.10. Devolución del IVA por exportación. CAPITULO IV. EL IVA ACREDITABLE PARA PAGOS MEN-SUALES 1. Antecedentes. 2. Concepto de acreditamiento. 3. Derecho personal al acreditamiento y su tratamiento en fusión y escisión. 4. Requisitos del IVA acreditable (artículo 5 LIVA). 4.1. Fracción I. El IVA debe corresponder a bienes, servicios, o al uso o goce temporal de bienes, estrictamente indispensables para la realización de actividades gravadas, distintas de la importación. 4.1.1. Estrictamente indispensables. 4.1.2. Erogaciones parcialmente deducibles para ISR. 4.2. Fracción II. Traslado expresamente al contribuyente y por separado. 4.3. Fracción III. Efectivamente pagado en el mes de que se trate. 4.4. Fracción IV. Entero del impuesto retenido. 4.5. Fracción V. Requisitos cuando se esté obligado al pago del IVA sólo por una parte del total de actividades. 4.5.1. Inciso a). Acreditamiento del IVA al 100% cuando se realicen exclusivamente actividades gravadas. 4.5.2. Inciso b). No será acreditable el IVA cuando se realicen exclusivamente actividades exentas. 4.5.3. Inciso c). Acreditamiento proporcional del IVA cuando se realicen actividades gravadas y exentas del IVA. 4.5.4. Proporción acreditable mensual. 4.5.5. Inciso d). Acreditamiento del IVA por la adquisición de inversiones considerando su destino habitual. 4.5.6. Opción de aplicar el acreditamiento en la proporción del año de calendario inmediato anterior y no efectuar el ajuste. 4.6. Ajuste del IVA acreditable de inversiones (artículo 5-A). 4.6.1. Reintegrar el acreditamiento. 4.6.2. Período en que se aplica el ajuste. 4.6.3. Incrementar acreditamiento. 4.6.4. Procedimiento para reintegrar o incrementar el acreditamiento. 4.6.5. Período en que se aplica el ajuste. 4.7. Opción de aplicar la proporción del año de calendario inmediato anterior (artículo 5-B). 4.7.1. Proporción en el año de calendario de inicio de actividades. 4.7.1.1. Acreditamiento tratándose de inversiones en inicio de actividades. 4.7.2. Período de aplicación de la proporción del año de calendario inmediato anterior. 4.7.3. Inversiones cuyo acreditamiento se aplicó con proporción mensual. 4.7.4. Períodos preoperativos 4.8. Proporción del IVA acreditable (artículo 5-C). 4.8.1. Importaciones de bienes o servicios. 4.8.2. Enajenaciones de activos fijos y cargos y gastos diferidos. 4.8.3. Dividendos percibidos. 4.8.4. Enajenaciones de acciones o partes sociales. 4.8.5. Enajenaciones de moneda nacional. 4.8.6. Intereses percibidos. 4.8.7. Enajenaciones a través de arrendamiento financiero. 4.8.8. Enajenaciones de bienes adquiridos por dación en pago. 4.8.9. Operaciones financieras derivadas. 4.8.10. Certificados de participación inmobiliaria no amortizables. 4.9. Procedencia del IVA acreditable en los pagos mensuales. 4.10. IVA acreditable pagado en importaciones de bienes tangibles. 4.11. El IVA acreditable en importación de bienes tangibles y servicios. 4.12. IVA acreditable por saldos a favor en declaraciones de pagos mensuales. 4.13. IVA acreditable de saldos a favor en declaraciones de pagos mensuales complementarias. 4.14. Cancelar el IVA acreditable por descuentos, devoluciones o bonificaciones. 4.15. No procede el acreditamiento del IVA por actos o actividades que están exentos o sujetos a la tasa del 0%. 4.16. Ejemplos del IVA acreditable por los diferentes actos o actividades realizadas. EJEMPLO 1. Acreditamiento del IVA al 100% cuando se realizan exclusivamente actividades gravadas. EJEMPLO 2. Total del IVA no acreditable cuando se realizan exclusivamente actividades exentas. EJEMPLO 3. Acreditamiento del IVA en forma proporcional cuando se realizan actividades gravadas y exentas. EJEMPLO 4. Acreditamiento del IVA cuando se realizan actividades gravadas y exentas y sus inversiones se destinan para realizar exclusivamente actividades gravadas. EJEMPLO 5. Acreditamiento del IVA cuando se realizan actividades gravadas y exentas y sus inversiones se destinan para realizar exclusivamente actividades exentas. EJEMPLO 6. Acreditamiento del IVA con proporción mensual por inversiones para actividades gravadas y exentas y sus inversiones se destinan indistintamente para realizar actividades gravadas y exentas y ajuste posterior que incrementa acreditamiento. EJEMPLO 7. Acreditamiento del IVA cuando se realizan actividades gravadas y exentas y sus inversiones se destinan indistintamente para realizar actividades gravadas y exentas (ajuste posterior que reintegra acreditamiento). EJEMPLO 8. Acreditamiento del IVA con proporción del año de calendario inmediato anterior. EJEMPLO 9. Acreditamiento del IVA en inicio de actividades aplicando opción del artículo 5-B. EJEMPLO 10. Devolución del IVA en período preoperativo. CAPITULO V. EL IVA CON BASE A FLUJO DE EFECTIVO 1. Antecedentes. 2. Ley de ingresos de la federación para el ejercicio fiscal de 2002 (LIF 2002) 3. Sustitución en 2002 de diversos artículos de la Ley del IVA. 4. Reformas a la Ley del IVA con base a flujos de efectivo a partir de 2003. 5. Efectivamente cobradas las contraprestaciones. 5.1. Pago mediante cheque. 5.2. Pago con títulos de crédito. 5.3. Pago con documentos, vales o tarjetas electrónicas. 5.3.1. Base del impuesto por la prestación del servicio de emisión de vales y monederos electrónicos 6. Ventajas financieras. 7. Desventajas administrativas. 8. Operaciones de factoraje financiero. 9. Momento de causación del IVA en enajenaciones. 10. Enajenación de títulos que incorporen derechos reales. 11. Momento de causación del IVA en prestación de servicios independientes. 11.1. Intereses. 11.2. Intereses a que se refiere el artículo 18-A de la Ley del IVA. 12. Del uso o goce temporal de bienes. 13. Importación de bienes intangibles. 14. Importación de servicios. 15. El IVA acreditable con base en el flujo de efectivo. 16. Momento de retención del IVA. 17. Expedición y entrega de comprobantes fiscales. 17.1. Pago en una sola exhibición. 17.2. Pago en varias exhibiciones. 17.3. Expedición de CFDI por pagos realizados (complemento para recepción de pagos). 17.4. Opción para que en el CFDI se establezca como método de pago “pago en una sola exhibición”. 17.5. Otros requisitos de los CFDI. 18. Ejemplo de causación y acreditamiento de IVA en base a flujo de efectivo. CAPITULO VI. PAGOS MENSUALES DEL IVA 1. Obligación de efectuar pagos mensuales. 2. Actos accidentales. 3. Importación de bienes tangibles. 4. Régimen de incorporación fiscal (RIF). 5. Ingresos de personas físicas por el otorgamiento del uso o goce temporal de inmuebles. 5.1. Unidad de medida y actualización (UMA). 6. Cálculo y monto del pago mensual. 6.1. IVA causado. 7. Deducir el IVA causado por descuentos, devoluciones o bonificaciones. 8. IVA retenido. 9. IVA acreditable efectivamente pagado. 9.1. Saldo pendiente de acreditar del mes inmediato anterior. 10. IVA a cargo y fecha de pago del IVA. 11. Saldos a favor en el pago mensual. 12. Declaraciones de pagos mensuales. 13. Declaraciones en documentos digitales con firma electrónica avanzada. 14. E.firma, el certificado de firma electrónica avanzada. 14.1. Valor probatorio de la e.firma portable. 15. Pagos mensuales vía Internet. 16. Acuse de recibo electrónico. 17. Declaraciones mensuales vía Internet a través de la página electrónica del SAT. 18. Entero del importe a pagar por transferencia electrónica en la dirección electrónica de las instituciones bancarias. 19. Declaraciones mensuales sin impuesto a pagar ni saldo a favor vía Internet a la dirección del SAT. 20. Procedimiento en el caso de que el pago de impuestos por línea de captura se realice fuera del plazo. 20.1. Declaraciones complementarias vía Internet. 20.2. Procedimiento para presentar declaraciones complementarias de pagos provisionales y definitivos de personas físicas y declaraciones complementarias por errores de personas físicas. 20.3. Presentación de declaraciones complementarias para modificar declaraciones con errores. 20.4. Procedimientos para presentar declaraciones complementarias por omisión de obligaciones de personas físicas. 20.5. Presentación de declaraciones complementarias por omisión de algunas obligaciones fiscales. 21.Opción para presentación de declaraciones mensuales con pago o saldo a favor, para personas físicas. 22. Limitación en declaraciones complementarias. 23. Declaraciones de pagos definitivos cuando se tengan varios establecimientos. 24. Declaraciones omitidas. 25. Sanciones en declaraciones de pagos. 26. Preparación de la declaración del pago mensual. EJEMPLO 1. Pago mensual de un contribuyente con actividades gravadas. EJEMPLO 2. Pago mensual de un contribuyente con actividades exentas. EJEMPLO 3. Pago mensual de un contribuyente con actividades gravadas y exentas. EJEMPLO 4. Pago mensual de un contribuyente con actividades gravadas y exentas y sus inversiones se destinan para realizar exclusivamente actividades gravadas. EJEMPLO 5. Pago mensual de un contribuyente con actividades gravadas y exentas y sus inversiones se destinan para realizar exclusivamente actividades exentas. EJEMPLO 6. Pago mensual de un contribuyente con actividades gravadas y exentas y sus inversiones se destinan indistintamente para realizar actividades gravadas y exentas. (Ajuste incrementa IVA acreditable) EJEMPLO 7. Pago mensual de un contribuyente con actividades gravadas y exentas y sus inversiones se destinan indistintamente para realizar actividades gravadas y exentas. (Ajuste reintegra IVA acreditable) EJEMPLO 8. Pago mensual de un contribuyente con actividades gravadas y exentas y sus inversiones se destinan indistintamente para realizar actividades gravadas y exentas efectuando ajuste aplicando proporción del año de calendario inmediato anterior. EJEMPLO 9. Pago mensual de un contribuyente con actividades gravadas y exentas y sus inversiones se destinan indistintamente para realizar actividades gravadas y exentas aplicando opción del artículo 5-B. CAPITULO VII. REGIMEN DE INCORPORACION FISCAL (RIF) 1. Concepto en ISR. 2. REPECOS que pasan al régimen general. 3. Personas físicas que no podrán aplicar el RIF. 4. Incorporación al RIF en 2014 de los REPECOS hasta 2013. 5. REPECOS hasta 2013 que no se incorporan al RIF. 6. Opción para pagar el ISR en términos del RIF. 7. Opción para socios o integrantes de personas morales para pagar el ISR en términos del RIF. 8. Opción para que familiares paguen el ISR en términos del RIF. 9. Otros ingresos distintos no implica salida del RIF. 10. Cuándo se dejará de aplicar el RIF. 11. Plazo del RIF y reducción del ISR. 12. Presentación de declaraciones del IVA para las personas físicas que aplican el RIF. 13. Cálculo bimestral del IVA. 14. Estímulos fiscales a quienes tributen en el RIF. 15. Obligaciones fiscales. 15.1. Contabilidad. 15.2. Conservar y expedir comprobantes. 15.3. Declaraciones informativas. 15.4. Forma de pago de los gastos del RIF. 15.5. Presentación de declaraciones bimestrales. 16. Antecedentes de Declaraciones del RIF. CAPITULO VIII. SALDOS A FAVOR DEL IVA EN PAGOS MENSUALES 1.Acreditamiento de saldos a favor del IVA en pagos mensuales. 1.1. Impedimento para acreditar. 2. Devolución de saldos a favor del IVA en declaraciones mensuales. 2.1. Solicitud de devolución de saldos a favor. 2.2. Plazo para efectuar la devolución. 2.2.1. Facultades de comprobación para verificar procedencia de devolución. 2.3. Requerimiento por buzón tributario. 2.4. Formato electrónico de devolución (FED). 2.5. Devolución de impuestos indirectos a la persona que pagó el impuesto trasladado. 2.6. Negativa de la devolución. 2.7. Devolución inmediata del IVA de bienes de importación destinados a regímenes aduaneros. 2.8. La devolución no implica resolución favorable. 2.9. Ejemplo de la devolución de un saldo a favor del IVA de pagos mensuales. 2.10. Devolución de saldos a favor del IVA generado por proyectos de inversión en activo fijo. 2.11. Devolución de saldos a favor del IVA para contribuyentes del sector agropecuario. 2.12. Devolución de saldos a favor del IVA de otras actividades. 3. No se podrán compensar saldos a favor del IVA a partir del 1 de enero de 2019. 4. Sanciones por acreditamiento o devoluciones indebidas. 5. Entregar contabilidad en medios electrónicos a requerimiento de la autoridad en solicitudes de devolución o compensación 6. Devolución de IVA a turistas. CAPITULO IX. DECLARACIONES INFORMATIVAS MENSUALES DE IVA 1. Qué son las declaraciones informativas. 2. Declaraciones informativas mensuales de IVA a partir de 2006. 3. Declaración informativa de pago a proveedores. 4. Operaciones realizadas con terceros estructura del archivo (Layout). 4.1 Comentarios sobre la estructura del archivo (Layout). 5. Opción para no detallar el total de la información de proveedores. 6. Medios de presentación de la declaración informativa(DIOT). 7. No presentar información del IVA que se solicite en declaraciones del ISR. 8. Obligación para la Federación, Entidades Federativas, Distrito Federal, Organismos Descentralizados y Municipios, de presentar declaraciones informativas electrónicas, sobre retenciones de ISR y pagos del IVA y del IEPS, previstas en el artículo 32-G, del Código Fiscal de la Federación. APENDICE Reglas de la RMF 2018 relacionadas con IVA. Anexo 7 de la RMF 2018 compilación de criterios normativos. Anexo 3 de la RMF 2018 criterios no vinculativos de las disposiciones fiscales y aduaneras. Tabla del Indice Nacional de Precios al Consumidor",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9786075411026"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "607541102X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 317,
+    "printType": "BOOK",
+    "categories": [
+     "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=PJyHDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=PJyHDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=PJyHDwAAQBAJ&pg=PR11&dq=2019&hl=&cd=8&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=PJyHDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=PJyHDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 13642.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 13642.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=PJyHDwAAQBAJ&rdid=book-PJyHDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.3642E10,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.3642E10,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/PAGOS_MENSUALES_DEL_IVA_2019-sample-epub.acsm?id=PJyHDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/PAGOS_MENSUALES_DEL_IVA_2019-sample-pdf.acsm?id=PJyHDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=PJyHDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "tasas en \u003cb\u003e2019\u003c/b\u003e con casos prácticos C.P. Jaime Domínguez Orozco. corresponda \u003cbr\u003e\nen los meses siguientes hasta agotarlo, solicitar su devolución o llevar a cabo su \u003cbr\u003e\ncompensación”. Como se trata de pagos mensuales definitivos, y no&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "o1iWDwAAQBAJ",
+   "etag": "GG35yQ5P8yE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/o1iWDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Estudios Económicos de la OCDE: México 2019",
+    "authors": [
+     "OECD"
+    ],
+    "publisher": "OECD Publishing",
+    "publishedDate": "2019-05-14",
+    "description": "El sólido marco de la política macroeconómica de México ha apoyado un crecimiento moderado a pesar de varios vientos en contra en los últimos años. Sin embargo, el bajo crecimiento de la productividad ha obstaculizado la convergencia de México con los países de mayores ingresos de la OCDE y las desigualdades siguen siendo elevadas. Se requiere así una estrategia renovada para aumentar la productividad y la inclusión.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9789264587380"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "9264587381"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 136,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=o1iWDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=o1iWDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=o1iWDwAAQBAJ&pg=PA89&dq=2019&hl=&cd=9&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=o1iWDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=o1iWDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 23119.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 23119.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=o1iWDwAAQBAJ&rdid=book-o1iWDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2.3119E10,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 2.3119E10,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Estudios_Econ%C3%B3micos_de_la_OCDE_M%C3%A9xico-sample-pdf.acsm?id=o1iWDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=o1iWDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "En \u003cb\u003e2019\u003c/b\u003e, el ISR corporativo de la zona de la frontera norte se redujo como una \u003cbr\u003e\nmedida temporal a dos años para estimular la actividad económica local. \u003cbr\u003e\nImpuesto al Valor Agregado (IVA): ampliación de la base. En 2014 se derogaron \u003cbr\u003e\nlas&nbsp;..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "rh6vDwAAQBAJ",
+   "etag": "O3WmE2OsEoI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rh6vDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Cari Mora",
+    "authors": [
+     "Thomas Harris"
+    ],
+    "publisher": "SUMA INTERNACIONAL",
+    "publishedDate": "2019-10-03",
+    "description": "Hannibal Lecter tiene un sucesor. Tras más de una década, el autor de El silencio de los corderos vuelve con un thriller arrollador. Bajo una antigua mansión de Pablo Escobar en la costa de Miami se ocultan veinticinco millones de dólares en oro. Un grupo de hombres sin escrúpulos lleva años buscándolos. Su líder es Hans-Peter Schneider, quien, impulsado por inconfesables apetitos, se gana la vida haciendo realidad las crueles fantasías de ricos y poderosos. Cari Mora escapó de la violencia de su Colombia natal y el cuidado de la mansión es ahora uno de sus variados trabajos. En cuanto pone sus ojos en Cari, Hans-Peter se encapricha de ella. Pero Cari Mora es una superviviente. Y no es la primera vez que tiene que luchar para demostrarlo. Ningún otro escritor ha conjurado los monstruos que nos acechan con la brillantez de Thomas Harris. El maestro del thriller americano regresa tras más de una década con una historia sobre el mal, la avaricia y las consecuencias de una oscura obsesión. La crítica ha dicho... «Lo mejor de la obra de Harris, y eso incluye su última y esperada novela, Cari Mora, retrata lo real de forma incuestionable... Nadie ha conseguido transmitir la parte oscura del ser humano de manera tan efectiva como él. Y parece que nadie va a superarlo nunca.» The Washington Post «Esta adictiva novela comienza con intensidad y va aumentando el suspense hasta un final lleno de acción... Harris escribe mediante escenas cinematográficas y no sobra ni una palabra. Una lectura diabólica.» USA Today «Dos figuras dominaron la literatura popular en las dos últimas décadas del siglo XIX: Conan Doyle y Sherlock Holmes. Un siglo más tarde su equivalente es Thomas Harris.» The Guardian «La pluma de Harris tiene la marca de la perfección.» The Times «Tan bueno como siempre. Leer sus libros es como recorrer seda fría lentamente con la mano.» Stephen King «Un thriller intenso, el mejor de Harris desde El silencio de los corderos.» New Statesman «La buena noticia para los lectores de Cari Mora es que Hannibal ha vuelto en espíritu pero no en persona.» Spectator «Un acontecimiento literario. Thomas Harris es un escritor excepcional de thriller, no solo por crear villanos memorables y monstruosos sino porque también nos ofrece protagonistas femeninas formidables.» Daily Mail «Los directores de Hollywood estarán ya soñando con llevar a la pantalla este adictivo thriller. Harris es un narrador superlativo.» Daily Express «Thomas Harris, el creador de Hannibal Lecter, es el mayor escritor de thrillers de nuestro tiempo.» Evening Standard",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788491294023"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8491294023"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=rh6vDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=rh6vDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "es",
+    "previewLink": "http://books.google.cl/books?id=rh6vDwAAQBAJ&printsec=frontcover&dq=2019&hl=&cd=10&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=rh6vDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=rh6vDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "CL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6900.0,
+     "currencyCode": "CLP"
+    },
+    "retailPrice": {
+     "amount": 6900.0,
+     "currencyCode": "CLP"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=rh6vDwAAQBAJ&rdid=book-rh6vDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.9E9,
+       "currencyCode": "CLP"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.9E9,
+       "currencyCode": "CLP"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "CL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Cari_Mora-sample-epub.acsm?id=rh6vDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.cl/books/download/Cari_Mora-sample-pdf.acsm?id=rh6vDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=rh6vDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Cari Mora escapó de la violencia de su Colombia natal y el cuidado de la mansión es ahora uno de sus variados trabajos. En cuanto pone sus ojos en Cari, Hans-Peter se encapricha de ella. Pero Cari Mora es una superviviente."
+   }
+  }
+ ]
+}
