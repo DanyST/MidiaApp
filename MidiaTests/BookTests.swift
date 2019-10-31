@@ -18,5 +18,23 @@ class BookTests: XCTestCase {
     func testBookExistence() {
         XCTAssertNotNil(bestBookEver)
     }
-
+    
+    func testDecodeBookCollection() {
+        guard let path = Bundle(for: type(of: self)).path(forResource: "book-search-response", ofType: "json") else {
+            XCTFail()
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let decoder = JSONDecoder()
+            let bookCollection = try decoder.decode(BookCollection.self, from: data)
+            XCTAssertNotNil(bookCollection)
+        } catch {
+             XCTFail()
+        }
+       
+    }
+      
+    
 }

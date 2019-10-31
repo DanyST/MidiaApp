@@ -21,3 +21,5 @@ struct Book {
     let price: Float?
     
 }
+
+extension Book: Decodable {}
