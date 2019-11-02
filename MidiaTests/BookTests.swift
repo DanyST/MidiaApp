@@ -33,6 +33,9 @@ class BookTests: XCTestCase {
             let firstBook = bookCollection.items?.first!
             XCTAssertNotNil(firstBook?.bookId)
             XCTAssertNotNil(firstBook?.title)
+            XCTAssertNotNil(firstBook?.authors)
+            XCTAssertNotNil(firstBook?.publishedDate)
+            XCTAssertNotNil(firstBook?.coverURL)
         } catch {
              XCTFail()
         }
