@@ -21,6 +21,20 @@ struct Book {
     let numberOfReviews: Int?
     let price: Float?
     
+    // MARK: - Initialization
+    init(bookId: String, title: String, authors: [String]? = nil, publishedDate: Date? = nil, description: String? = nil, coverURL: URL? = nil, ratings: Float? = nil, numberOfReviews: Int? = nil, price: Float? = nil) {
+        
+        self.bookId = bookId
+        self.title = title
+        self.authors = authors
+        self.publishedDate = publishedDate
+        self.description = description
+        self.coverURL = coverURL
+        self.ratings = ratings
+        self.numberOfReviews = numberOfReviews
+        self.price = price
+    }
+    
 }
 
 // MARK: - Decodable
@@ -45,7 +59,7 @@ extension Book: Decodable {
         case price = "amount"
     }
     
-    // MARK: - Init Decoder
+    // MARK: - Init Decoder for Decodable
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -82,4 +96,12 @@ extension Book: Decodable {
     }
 }
 
+// MARK: - MediaItemProvidable Protocol
+extension Book: MediaItemProvidable {
+    
+    var imageURL: URL? {
+        return coverURL
+    }
+    
+}
 

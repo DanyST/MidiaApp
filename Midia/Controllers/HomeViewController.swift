@@ -9,6 +9,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    // MARK: - Properties
+    var mediaItems: [MediaItemProvidable] = []
         
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
@@ -30,14 +33,16 @@ extension HomeViewController: UICollectionViewDelegate {
 // MARK: - UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return mediaItems.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let mediaItem = mediaItems[indexPath.item]
+
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MediaItemCollectionViewCell.reuseIdentifier, for: indexPath) as! MediaItemCollectionViewCell
-        
-        cell.titleLabel.text = "Hola mundo!!!"
+                
+        cell.titleLabel.text = mediaItem.title
         
         return cell
     }
