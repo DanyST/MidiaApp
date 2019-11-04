@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
+        
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -34,7 +34,12 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MediaItemCollectionViewCell.reuseIdentifier, for: indexPath) as! MediaItemCollectionViewCell
+        
+        cell.titleLabel.text = "Hola mundo!!!"
+        
+        return cell
     }
     
     

@@ -8,7 +8,10 @@
 
 import UIKit
 
-class MediaCollectionViewCell: UICollectionViewCell {
+class MediaItemCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - Properties
+    static let reuseIdentifier = "mediaItemCell"
     
     // MARK: - Outlets
     @IBOutlet weak var imageView: UIView!
