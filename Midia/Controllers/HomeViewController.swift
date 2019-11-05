@@ -11,7 +11,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     // MARK: - Properties
-    var mediaItems: [MediaItemProvidable] = []
+    var mediaItemProvider: MediaItemProvider!
+    private var mediaItems: [MediaItemProvidable] = []
         
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
@@ -22,6 +23,8 @@ class HomeViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        mediaItems = mediaItemProvider.getHomeMediaItems()
     }
 }
 
@@ -42,7 +45,7 @@ extension HomeViewController: UICollectionViewDataSource {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MediaItemCollectionViewCell.reuseIdentifier, for: indexPath) as! MediaItemCollectionViewCell
                 
-        cell.titleLabel.text = mediaItem.title
+        cell.mediaItem = mediaItem
         
         return cell
     }

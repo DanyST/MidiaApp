@@ -23,8 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             fatalError("Wrong initial setup")
         }
         
-        homeViewController.mediaItems = [Book(bookId: "1", title: "First book"), Book(bookId: "2", title: "Second book"), Game(), Game()]
-        
+        homeViewController.mediaItemProvider = MediaItemProvider(withMediaItemKind: .book)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
