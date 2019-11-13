@@ -10,5 +10,6 @@ import Foundation
 
 protocol MediaItemAPIConsumable {
     // No importa de donde se conecte, solo tiene que responder con ese metodo
-    func getLatestMediaItems() -> [MediaItemProvidable]
+    func getLatestMediaItems(completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void)
+    
 }

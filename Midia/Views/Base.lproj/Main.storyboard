@@ -62,18 +62,34 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="A6z-l2-EH0">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkX-7S-cm2">
+                                <rect key="frame" x="181" y="419" width="52" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="A6z-l2-EH0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MXC-hB-jzc"/>
                             <constraint firstAttribute="bottom" secondItem="Aja-3w-7rK" secondAttribute="bottom" id="Msz-9e-YTi"/>
                             <constraint firstItem="Aja-3w-7rK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UQm-8C-Yhz"/>
                             <constraint firstItem="Aja-3w-7rK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W74-jF-1pA"/>
+                            <constraint firstItem="GkX-7S-cm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b1k-O2-AHE"/>
                             <constraint firstItem="Aja-3w-7rK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h6f-Gt-QOt"/>
+                            <constraint firstItem="GkX-7S-cm2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jn3-dt-9E5"/>
+                            <constraint firstItem="A6z-l2-EH0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfJ-gq-nf2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="A6z-l2-EH0" id="bUD-2f-yhz"/>
                         <outlet property="collectionView" destination="Aja-3w-7rK" id="xta-Nr-f2e"/>
+                        <outlet property="failureEmojiLabel" destination="GkX-7S-cm2" id="Vqh-Jr-rpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

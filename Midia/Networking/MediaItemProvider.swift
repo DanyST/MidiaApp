@@ -30,18 +30,38 @@ class MediaItemProvider {
         }
     }
     
-    func getHomeMediaItems() -> [MediaItemProvidable] {
-        // guardar cache
-        // comprobar que estamos en el hilo principal
-        return apiConsumer.getLatestMediaItems()
+    // MARK: - Methods
+    func getHomeMediaItems(completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void) {
+        apiConsumer.getLatestMediaItems { (result) in
+            switch result {
+            case .success(let mediaItems):
+                assert(Thread.current == Thread.main)
+                completion(.success(mediaItems))
+                break
+            case .failure(let error):
+                assert(Thread.current == Thread.main)
+                completion(.failure(error))
+                break
+            }
+        }
     }
     
 }
 
 
 class MockMediaItemAPIConsumer: MediaItemAPIConsumable {
-    func getLatestMediaItems() -> [MediaItemProvidable] {
-        return [Game()]
+    func getLatestMediaItems(completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void) {
+        let queue = DispatchQueue.global()
+        queue.async {
+            // llamar a la API de terceros
+            Thread.sleep(forTimeInterval: 5)
+
+            // Devolver el resultado de la API en el hilo principal
+            let mainQueue = DispatchQueue.main
+            mainQueue.async {
+                completion(.success([Game(), Game()]))
+            }
+        }
+        
     }
-    
 }

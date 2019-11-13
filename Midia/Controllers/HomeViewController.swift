@@ -16,15 +16,32 @@ class HomeViewController: UIViewController {
         
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var failureEmojiLabel: UILabel!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Asiganmos delegados
         collectionView.delegate = self
         collectionView.dataSource = self
+
         
-        mediaItems = mediaItemProvider.getHomeMediaItems()
+        mediaItemProvider.getHomeMediaItems { [unowned self] (result) in
+            switch result {
+            case .success(let mediaItems):
+                self.mediaItems = mediaItems
+                self.collectionView.reloadData()
+                self.activityIndicatorView.isHidden = true
+                break
+            case .failure(_):
+                self.activityIndicatorView.isHidden = true
+                self.failureEmojiLabel.isHidden = false
+                break
+            }
+        }
+        
     }
 }
 
