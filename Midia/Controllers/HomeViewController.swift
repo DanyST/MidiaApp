@@ -8,16 +8,57 @@
 
 import UIKit
 
+enum MediaItemViewControllerState {
+    case loading
+    case noResults
+    case failure
+    case ready
+}
+
 class HomeViewController: UIViewController {
     
-    // MARK: - Properties
-    var mediaItemProvider: MediaItemProvider!
-    private var mediaItems: [MediaItemProvidable] = []
-        
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var failureEmojiLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    // MARK: - Properties
+    var mediaItemProvider: MediaItemProvider!
+    private var mediaItems: [MediaItemProvidable] = []
+
+    var state: MediaItemViewControllerState = .ready {
+        willSet {
+            guard state != newValue else { return }
+
+            // ocultamos todas las vistas relacionadas con los estados y despues mostramos las que corresponden
+            [collectionView, activityIndicatorView, failureEmojiLabel, statusLabel].forEach { view in
+                view?.isHidden = true
+            }
+
+            switch newValue {
+            case .loading:
+                activityIndicatorView.isHidden = false
+                break
+            case .noResults:
+                failureEmojiLabel.isHidden = false
+                failureEmojiLabel.text = "🙁"
+                statusLabel.isHidden = false
+                statusLabel.text = "There are results..."
+                break
+            case .failure:
+                failureEmojiLabel.isHidden = false
+                failureEmojiLabel.text = "❌"
+                statusLabel.isHidden = false
+                statusLabel.text = "Connection error!!"
+                break
+            case .ready:
+                collectionView.isHidden = false
+                collectionView.reloadData()
+                break
+            }
+        }
+    }
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -27,17 +68,15 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        
+        self.state = .loading
         mediaItemProvider.getHomeMediaItems { [unowned self] (result) in
             switch result {
             case .success(let mediaItems):
                 self.mediaItems = mediaItems
-                self.collectionView.reloadData()
-                self.activityIndicatorView.isHidden = true
+                self.state = mediaItems.count > 0 ? .ready : .noResults
                 break
             case .failure(_):
-                self.activityIndicatorView.isHidden = true
-                self.failureEmojiLabel.isHidden = false
+                self.state = .failure
                 break
             }
         }
