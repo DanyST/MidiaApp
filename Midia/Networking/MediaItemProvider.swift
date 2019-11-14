@@ -22,7 +22,7 @@ class MediaItemProvider {
     convenience init(withMediaItemKind mediaItemKind: MediaItemKind) {
         switch mediaItemKind {
         case .book:
-            self.init(withMediaItemKind: mediaItemKind, apiConsumer: MockMediaItemAPIConsumer())
+            self.init(withMediaItemKind: mediaItemKind, apiConsumer: GoogleBooksAPIConsumerURLSession())
         case .game:
             self.init(withMediaItemKind: mediaItemKind, apiConsumer: MockMediaItemAPIConsumer())
         case .movie:
