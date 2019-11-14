@@ -49,6 +49,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+keys.plist
 
 ## Other
 *.moved-aside
