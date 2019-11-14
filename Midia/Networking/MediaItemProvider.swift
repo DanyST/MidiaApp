@@ -8,13 +8,13 @@
 
 import Foundation
 
-class MediaItemProvider {
+final class MediaItemProvider {
     // MARK: - Properties
     private let mediaItemKind: MediaItemKind
     private let apiConsumer: MediaItemAPIConsumable
     
     // MARK: - Initialization
-    private init(withMediaItemKind mediaItemKind: MediaItemKind, apiConsumer: MediaItemAPIConsumable) {
+    init(withMediaItemKind mediaItemKind: MediaItemKind, apiConsumer: MediaItemAPIConsumable) {
         self.mediaItemKind = mediaItemKind
         self.apiConsumer = apiConsumer
     }
@@ -22,10 +22,8 @@ class MediaItemProvider {
     convenience init(withMediaItemKind mediaItemKind: MediaItemKind) {
         switch mediaItemKind {
         case .book:
-            self.init(withMediaItemKind: mediaItemKind, apiConsumer: GoogleBooksAPIConsumerURLSession())
-        case .game:
-            self.init(withMediaItemKind: mediaItemKind, apiConsumer: MockMediaItemAPIConsumer())
-        case .movie:
+            self.init(withMediaItemKind: mediaItemKind, apiConsumer: GoogleBooksAPIConsumerAlamofire())
+        case .movie, .game:
             fatalError("Not supported movie yet :( coming soon")
         }
     }
@@ -46,22 +44,4 @@ class MediaItemProvider {
         }
     }
     
-}
-
-
-class MockMediaItemAPIConsumer: MediaItemAPIConsumable {
-    func getLatestMediaItems(completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void) {
-        let queue = DispatchQueue.global()
-        queue.async {
-            // llamar a la API de terceros
-            Thread.sleep(forTimeInterval: 5)
-
-            // Devolver el resultado de la API en el hilo principal
-            let mainQueue = DispatchQueue.main
-            mainQueue.async {
-                completion(.success([Game(), Game()]))
-            }
-        }
-        
-    }
 }

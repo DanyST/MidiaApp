@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GoogleBooksAPIConsumerURLSession: MediaItemAPIConsumable {
+final class GoogleBooksAPIConsumerURLSession: MediaItemAPIConsumable {
     
     let session = URLSession.shared
     
