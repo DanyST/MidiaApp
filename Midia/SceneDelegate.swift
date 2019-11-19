@@ -19,11 +19,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        guard let homeViewController = self.window?.rootViewController as? HomeViewController else {
-            fatalError("Wrong initial setup")
-        }
+        guard let tabBarViewController = self.window?.rootViewController as? UITabBarController,
+            let homeViewController = tabBarViewController.viewControllers?.first as? HomeViewController,
+            let searchViewController = tabBarViewController.viewControllers?[1] as? SearchViewController
+            else {
+                fatalError("Wrong initial setup")
+            }
         
-        homeViewController.mediaItemProvider = MediaItemProvider(withMediaItemKind: .book)
+        let currentMediaItemProvider = MediaItemProvider(withMediaItemKind: .book)
+        homeViewController.mediaItemProvider = currentMediaItemProvider
+        searchViewController.mediaItemProvider = currentMediaItemProvider
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

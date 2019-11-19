@@ -44,4 +44,20 @@ final class MediaItemProvider {
         }
     }
     
+    func getSearchMediaItems(withQueryParams queryParams: String, completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void) {
+        apiConsumer.getMediaItems(withQueryParams: queryParams) { (result) in
+            switch result {
+            case .success(let mediaItems):
+                assert(Thread.current == Thread.main)
+                completion(.success(mediaItems))
+                break
+            case .failure(let error):
+                assert(Thread.current == Thread.main)
+                completion(.failure(error))
+                break
+            }
+        }
+        
+        // tambien podriamos guardar en cache, entre otras cosas de manera interna en la App
+    }
 }
