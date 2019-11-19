@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MediaItemCollectionViewCell: UICollectionViewCell {
     
@@ -14,13 +15,16 @@ class MediaItemCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "mediaItemCell"
     
     // MARK: - Outlets
-    @IBOutlet private weak var imageView: UIView!
+    @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     
     var mediaItem: MediaItemProvidable! {
         didSet {
             titleLabel.text = mediaItem.title
-            // TODO: add image
+            
+            if let url = mediaItem.imageURL {
+                imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"))
+            }
         }
     }
     
