@@ -86,7 +86,22 @@ class HomeViewController: UIViewController {
 
 // MARK: - UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // Creamos el VC
+        guard let detailViewController = UIStoryboard(name: "Detail", bundle: nil).instantiateInitialViewController() as? DetailViewController else {
+            fatalError()
+        }
+        
+        detailViewController.modalPresentationStyle = .fullScreen
+        
+        // Le enviamos la info
+        let mediaItem = mediaItems[indexPath.item]
+        detailViewController.mediaItemId = mediaItem.mediaItemId
+        detailViewController.mediaItemProvider = mediaItemProvider
+        
+        // Mostramos el VC en pantalla
+        present(detailViewController, animated: true, completion: nil)
+    }
 }
 
 // MARK: - UICollectionViewDataSource

@@ -8,7 +8,16 @@
 
 import Foundation
 
-struct Game: MediaItemProvidable {
-    let title: String = "A game"
-    let imageURL: URL? = nil
+struct Game: MediaItemProvidable, MediaItemDetailedProvidable {
+    
+    // MARK: - Properties
+    var mediaItemId: String = "12345"
+    var title: String = "A game"
+    var imageURL: URL? = nil
+    var creatorName: String? = nil
+    var ratings: Float? = nil
+    var numberOfReviews: Int? = nil
+    var creationDate: Date? = nil
+    var price: Float? = nil
+    var description: String? = nil
 }

@@ -32,8 +32,20 @@ class SearchViewController: UIViewController {
 
 // MARK: - UICollectionViewDelegate
 extension SearchViewController: UICollectionViewDelegate {
-    // TODO: Cuando seleccione el usuario una celda, nos vamos al detalle del media item
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       // Creamos el VC
+       guard let detailViewController = UIStoryboard(name: "Detail", bundle: nil).instantiateInitialViewController() as? DetailViewController else {
+           fatalError()
+       }
+       
+       // Le enviamos la info
+       let mediaItem = mediaItems[indexPath.item]
+       detailViewController.mediaItemId = mediaItem.mediaItemId
+       detailViewController.mediaItemProvider = mediaItemProvider
+       
+       // Mostramos el VC en pantalla
+       present(detailViewController, animated: true, completion: nil)
+       }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -64,12 +76,12 @@ extension SearchViewController: UISearchBarDelegate {
     // TODO: hacer la busqueda, pintar los resultados
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // Podriamos añadir delimitaciones de caracteres especiales
-        guard let queryParams = searchBar.text,
-            queryParams.count > 0 else { return }
+        guard let userText = searchBar.text,
+            userText.count > 0 else { return }
         
         
         activityIndicator.isHidden = false
-        mediaItemProvider.getSearchMediaItems(withQueryParams: queryParams) { [unowned self] (result) in
+        mediaItemProvider.getSearchMediaItems(withQueryParams: userText) { [unowned self] (result) in
             switch result {
             case .success(let mediaItems):
                 self.mediaItems = mediaItems

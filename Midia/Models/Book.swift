@@ -98,10 +98,23 @@ extension Book: Decodable {
 
 // MARK: - MediaItemProvidable Protocol
 extension Book: MediaItemProvidable {
+    var mediaItemId: String {
+        return bookId
+    }
     
     var imageURL: URL? {
         return coverURL
     }
+}
+
+// MARK: - MediaItemDetailedProvidable Protocol
+extension Book: MediaItemDetailedProvidable {
+    var creatorName: String? {
+        return authors?.joined(separator: ", ") // ["Patrick", "Juan"] -> "Patrick, Juan"
+    }
     
+    var creationDate: Date? {
+        return publishedDate
+    }
 }
 
