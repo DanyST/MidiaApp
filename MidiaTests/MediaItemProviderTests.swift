@@ -13,9 +13,20 @@ final class MockMediaItemAPIConsumer: MediaItemAPIConsumable {
     func getLatestMediaItems(completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void) {
         completion(.success([MockMediaItem(), MockMediaItem()]))
     }
+
+    func getMediaItems(withQueryParams queryParams: String, completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void) {
+        completion(.success([MockMediaItem(), MockMediaItem()]))
+    }
+    
+    func getMediaItem(byId mediaItemId: String, completion: @escaping (Result<MediaItemDetailedProvidable, Error>) -> Void) {
+        completion(.failure(NSError()))
+    }
+    
 }
 
 final class MockMediaItem: MediaItemProvidable {
+    let mediaItemId: String = "1"
+    
     let title: String = "A title"
     var imageURL: URL? = nil
 }

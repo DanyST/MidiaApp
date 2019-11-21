@@ -92,8 +92,6 @@ extension HomeViewController: UICollectionViewDelegate {
             fatalError()
         }
         
-        detailViewController.modalPresentationStyle = .fullScreen
-        
         // Le enviamos la info
         let mediaItem = mediaItems[indexPath.item]
         detailViewController.mediaItemId = mediaItem.mediaItemId

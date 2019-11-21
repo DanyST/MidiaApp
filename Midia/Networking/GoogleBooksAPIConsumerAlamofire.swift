@@ -58,7 +58,29 @@ final class GoogleBooksAPIConsumerAlamofire: MediaItemAPIConsumable {
             }
             
         }
+    }
+    
+    func getMediaItem(byId mediaItemId: String, completion: @escaping (Swift.Result<MediaItemDetailedProvidable, Error>) -> Void) {
         
+        let url = GoogleBooksAPIConstants.urlForBook(withId: mediaItemId)
+        Alamofire.request(url).responseData { (response) in
+            
+            switch response.result {
+            case .success(let data):
+                do {
+                    let decoder = JSONDecoder()
+                    let book = try decoder.decode(Book.self, from: data)
+                    completion(.success(book)) // Alamofire nos envia el completion en el hilo principal
+                } catch let error {
+                    completion(.failure(error))  // Error parseando, lo enviamos para arriba
+                }
+                break
+            case .failure(let error):
+                completion(.failure(error))
+                break
+            }
+            
+        }
     }
     
 }

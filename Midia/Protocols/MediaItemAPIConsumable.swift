@@ -13,4 +13,6 @@ protocol MediaItemAPIConsumable {
     func getLatestMediaItems(completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void)
     
     func getMediaItems(withQueryParams queryParams: String, completion: @escaping (Result<[MediaItemProvidable], Error>) -> Void)
+    
+    func getMediaItem(byId mediaItemId: String, completion: @escaping (Result<MediaItemDetailedProvidable, Error>) -> Void)
 }

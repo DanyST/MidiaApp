@@ -34,13 +34,32 @@ class DetailViewController: UIViewController {
         
         loadingView.isHidden = false
         // pedirle al media provider, el detalle del media item con el id recibido
-        Thread.sleep(forTimeInterval: 2)
-        detailedMediaItem = Game()
-        loadingView.isHidden = true
-        
-        // sync
-        syncViewWithModel()
-        
+        mediaItemProvider.getMediaItem(byId: mediaItemId) { [weak self] (result) in
+            switch result {
+            case .success(let detailedMediaItem):
+                self?.detailedMediaItem = detailedMediaItem
+                 // sync
+                self?.syncViewWithModel()
+                self?.loadingView.isHidden = true
+            case .failure(_):
+                self?.loadingView.isHidden = true
+                
+                // Creo alertController
+                let alertController = UIAlertController(title: "Error", message: "An error has occurred with the Media Item :(", preferredStyle: .alert)
+                
+                // Creo AlertAction
+                let alertAction = UIAlertAction(title: "OK", style: .default, handler: { (_) in
+                    self?.dismiss(animated: true, completion: nil)
+                })
+                
+                // Añado AlertAction a AlertContorller
+                alertController.addAction(alertAction)
+                
+                // Presento alertController en pantalla
+                self?.present(alertController, animated: true, completion: nil)
+            }
+        }
+             
     }
 }
 
