@@ -71,8 +71,15 @@ extension DetailViewController {
         // Required
         titleLabel.text = mediaItem.title
         
-        // It can be nil
-        descriptionTextView.text = mediaItem.description
+//        // attributedText guarda un NSAttributedString con estilos definidos
+//        let descriptionFont = descriptionTextView.font
+//        let descriptionColor = descriptionTextView.textColor
+//
+//        // It can be nil
+//        descriptionTextView.attributedText = mediaItem.description?.htmlToAttributedString
+//        (descriptionTextView.font, descriptionTextView.textColor) = (descriptionFont, descriptionColor)
+        descriptionTextView.htmlText(withString: mediaItem.description)
+        
         
         // Stack view, if exist property it show, else hidden property for that stack view re-organize
         if let url = mediaItem.imageURL {
