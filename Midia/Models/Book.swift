@@ -38,7 +38,7 @@ struct Book {
 }
 
 // MARK: - Decodable
-extension Book: Decodable {
+extension Book: Codable {
     
     // Chosing codingKeys
     enum CodingKeys: String, CodingKey {
@@ -61,10 +61,12 @@ extension Book: Decodable {
     
     // MARK: - Init Decoder for Decodable
     init(from decoder: Decoder) throws {
+        // Main Container
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
         bookId = try container.decode(String.self, forKey: .bookId)
         
+        
+        // VolumeInfo Container
         let volumeInfoContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .volumeInfo)
         title = try volumeInfoContainer.decode(String.self, forKey: .title)
         
@@ -78,6 +80,11 @@ extension Book: Decodable {
         }
     
         description = try volumeInfoContainer.decodeIfPresent(String.self, forKey: .description)
+        ratings = try volumeInfoContainer.decodeIfPresent(Float.self, forKey: .ratings)
+        numberOfReviews = try volumeInfoContainer.decodeIfPresent(Int.self, forKey: .numberOfReviews)
+        
+        
+        // Image Links Container
         
         // Es posible que no haya imageLinkContainer, entonces ponemos a nil la coverURL
 //        do {
@@ -87,12 +94,41 @@ extension Book: Decodable {
 //            coverURL = nil
 //        }
         
-        ratings = try volumeInfoContainer.decodeIfPresent(Float.self, forKey: .ratings)
-        numberOfReviews = try volumeInfoContainer.decodeIfPresent(Int.self, forKey: .numberOfReviews)
-        
+               
+        // saleInfoContainer
         let saleInfoContainer = try? container.nestedContainer(keyedBy: CodingKeys.self, forKey: .saleInfo)
         let listPriceContainer = try? saleInfoContainer?.nestedContainer(keyedBy: CodingKeys.self, forKey: .listPrice)
         price = try listPriceContainer?.decodeIfPresent(Float.self, forKey: .price)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        // Main container
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(bookId, forKey: .bookId)
+        
+        // Volume Info container
+        var volumeInfoContainer = container.nestedContainer(keyedBy: CodingKeys.self, forKey: .volumeInfo)
+        try volumeInfoContainer.encode(title, forKey: .title)
+        try volumeInfoContainer.encodeIfPresent(authors, forKey: .authors)
+        
+        if let date = publishedDate {
+            try volumeInfoContainer.encode(DateFormatter.booksAPIDateFormatter.string(from: date), forKey: .publishedDate)
+        }
+        
+        try volumeInfoContainer.encodeIfPresent(description, forKey: .description)
+        try volumeInfoContainer.encodeIfPresent(ratings, forKey: .ratings)
+        try volumeInfoContainer.encodeIfPresent(numberOfReviews, forKey: .numberOfReviews)
+        
+        
+        // Image Links Container
+        var imageLinksContainer = volumeInfoContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .imageLinks)
+        try imageLinksContainer.encodeIfPresent(coverURL, forKey: .coverURL)
+        
+        
+        // SaleInfoContainer
+        var saleInfoContainer = container.nestedContainer(keyedBy: CodingKeys.self, forKey: .saleInfo)
+        var listPriceContainer = saleInfoContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .listPrice)
+        try listPriceContainer.encodeIfPresent(price, forKey: .price)
     }
 }
 
