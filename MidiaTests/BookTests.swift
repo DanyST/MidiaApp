@@ -86,5 +86,27 @@ class BookTests: XCTestCase {
             XCTFail()
         }
     }
+    
+    func testPersistOnUserDefaults() {
+        // Para no mezclar la instancia singleton con la app de producción
+        let userDefaults = UserDefaults(suiteName: "tests")!
+        let bookKey = "bookKey"
+        
+        do {
+            let bookData = try encoder.encode(bestBookEver)
+            userDefaults.set(bookData, forKey: bookKey)
+            userDefaults.synchronize()
+            
+            if let retrieveBookData = userDefaults.data(forKey: bookKey) {
+                let decodedBook = try decoder.decode(Book.self, from: retrieveBookData)
+                XCTAssertNotNil(decodedBook)
+            } else {
+                XCTFail()
+            }
+            
+        } catch {
+            XCTFail()
+        }
+    }
       
 }

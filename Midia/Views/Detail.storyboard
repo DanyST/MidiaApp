@@ -40,12 +40,15 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vw-0q-A9b">
-                                <rect key="frame" x="177" y="802" width="60" height="40"/>
+                                <rect key="frame" x="127" y="802" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8dn-lx-WNF"/>
-                                    <constraint firstAttribute="width" constant="60" id="CYT-Uf-TDL"/>
+                                    <constraint firstAttribute="width" constant="160" id="CYT-Uf-TDL"/>
                                 </constraints>
-                                <state key="normal" title="Preview"/>
+                                <state key="normal" title="Add Favorite"/>
+                                <connections>
+                                    <action selector="didTapToggleFavorite:" destination="JvS-lG-Sap" eventType="touchUpInside" id="3hK-Qf-tAP"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-T8-nfM">
                                 <rect key="frame" x="166" y="140" width="232" height="180"/>
@@ -167,6 +170,7 @@
                         <outlet property="ratingsContainerView" destination="urt-dl-led" id="VJL-rl-0v6"/>
                         <outlet property="ratingsLabel" destination="wGI-QE-N0X" id="nVg-uw-ePu"/>
                         <outlet property="titleLabel" destination="vXg-wZ-D22" id="qWy-gF-DHn"/>
+                        <outlet property="toggleFavoriteButton" destination="0Vw-0q-A9b" id="Hmf-J1-z9t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEB-uq-XtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
