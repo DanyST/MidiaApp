@@ -39,7 +39,7 @@ class DetailViewController: UIViewController {
     weak var delegate: DetailViewControllerDelegate?
     // Nos tienen que dar el valor de esta variable, si no esta pantalla no tiene ningun sentido
     var mediaItemId: String!
-    weak var mediaItemProvider: MediaItemProvider!
+    weak var mediaItemProvider: MediaItemProvider?
     var detailedMediaItem: MediaItemDetailedProvidable? // model
     var isFavorite = false
     
@@ -66,7 +66,7 @@ class DetailViewController: UIViewController {
         } else {
             
             // pedirle al media provider, el detalle del media item con el id recibido
-            mediaItemProvider.getMediaItem(byId: mediaItemId) { [weak self] (result) in
+            mediaItemProvider?.getMediaItem(byId: mediaItemId) { [weak self] (result) in
                 switch result {
                 case .success(let detailedMediaItem):
                     self?.detailedMediaItem = detailedMediaItem

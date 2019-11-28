@@ -37,7 +37,7 @@ struct Book {
     
 }
 
-// MARK: - Decodable
+// MARK: - Codable
 extension Book: Codable {
     
     // Chosing codingKeys
@@ -101,6 +101,7 @@ extension Book: Codable {
         price = try listPriceContainer?.decodeIfPresent(Float.self, forKey: .price)
     }
     
+    // MARK: - Encodable Method
     func encode(to encoder: Encoder) throws {
         // Main container
         var container = encoder.container(keyedBy: CodingKeys.self)

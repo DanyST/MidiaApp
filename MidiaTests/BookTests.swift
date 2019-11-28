@@ -26,7 +26,7 @@ class BookTests: XCTestCase {
         
         coverURL = URL(string: "http://books.google.com/books/content?id=CIV8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api")
         
-        bestBookEver = Book(bookId: "!", title: "El nombre del viento", authors: ["Patrick Rothfuss"] , publishedDate: Date(timeIntervalSinceNow: 23312), description: "Kvothe rules", coverURL: URL(string: "http://www.google.com"), ratings: 5.0, numberOfReviews: 1, price: 10.99)
+        bestBookEver = Book(bookId: "!", title: "El nombre del viento", authors: ["Patrick Rothfuss"] , publishedDate: Date(timeIntervalSinceNow: 23312), description: "Kvothe rules", coverURL: coverURL, ratings: 5.0, numberOfReviews: 1, price: 10.99)
     }
 
     

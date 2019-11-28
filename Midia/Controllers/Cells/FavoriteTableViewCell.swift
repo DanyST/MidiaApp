@@ -57,7 +57,7 @@ class FavoriteTableViewCell: UITableViewCell {
         
         coverImageView.sd_cancelCurrentImageLoad()
         
-        [creatorsLabel, createdOnLabel, priceLabel].forEach { $0?.isHidden = true }
+        [creatorsLabel, createdOnLabel, priceLabel].forEach { $0?.isHidden = false }
     }
     
 }

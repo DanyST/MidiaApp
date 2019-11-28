@@ -38,10 +38,10 @@ class FavoritesViewController: UIViewController {
 extension FavoritesViewController {
     func loadFavorites() {
         // coger los favoritos desde el storage manager
-        if let storedFavorites = StorageManager.shared.getFavorites() {
-            self.favorites = storedFavorites
-            self.tableView.reloadData()
-        }
+        guard let storedFavorites = StorageManager.shared.getFavorites() else  { return }
+        
+        self.favorites = storedFavorites
+        self.tableView.reloadData()
     }
 }
 
@@ -99,6 +99,4 @@ extension FavoritesViewController: DetailViewControllerDelegate {
         // Recargar los favoritos
         loadFavorites()
     }
-    
-    
 }
