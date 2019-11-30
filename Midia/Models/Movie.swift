@@ -86,3 +86,15 @@ extension Movie: MediaItemProvidable {
     }
     
 }
+
+// MARK: - MediaItemDetailedProvidable Protocol
+extension Movie: MediaItemDetailedProvidable {
+    var creatorName: String? {
+        return directors?.joined(separator: ", ")
+    }
+    
+    var creationDate: Date? {
+        return releaseDate
+    }
+    
+}
