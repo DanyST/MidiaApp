@@ -19,27 +19,63 @@ struct GoogleBooksAPIConstants {
         
         return apiKey
     }()
-
     
-    static func getAbsoluteURL(withQueryParams queryParams: [String]) -> URL {
+    private static func baseURLComponents() -> URLComponents {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "www.googleapis.com"
-        components.path = "/books/v1/volumes"
         components.queryItems = [URLQueryItem(name: "key", value: apiKey)]
+        
+        return components
+    }
+    
+    static func getAbsoluteURL(withQueryParams queryParams: [String]) -> URL {
+        var components = baseURLComponents()
+        components.path = "/books/v1/volumes"
         components.queryItems?.append(URLQueryItem(name: "q", value: queryParams.joined(separator: "+")))
         
         return components.url!
     }
     
     static func urlForBook(withId bookId: String) -> URL {
+        var components = baseURLComponents()
+        components.path = "/books/v1/volumes/\(bookId)"
+        
+        return components.url!
+    }
+}
+
+struct ITunesMoviesAPIConstants {
+    
+    private static func baseURLComponents() -> URLComponents{
         var components = URLComponents()
         components.scheme = "https"
-        components.host = "www.googleapis.com"
-        components.path = "/books/v1/volumes/\(bookId)"
-        components.queryItems = [URLQueryItem(name: "key", value: apiKey)]
+        components.host = "itunes.apple.com"
+        
+        return components
+    }
+    
+    static func getAbsoluteURL(withQueryParams queryParams: [String], country: String = "US") -> URL {
+        var components = baseURLComponents()
+        components.path = "/search"
+        components.queryItems = [
+            URLQueryItem(name: "media", value: "movie"),
+            URLQueryItem(name: "attribute", value: "movieTerm"),
+            URLQueryItem(name: "country", value: country),
+            URLQueryItem(name: "term", value: queryParams.joined(separator: "+"))
+        ]
         
         return components.url!
     }
     
+    static func urlForMovie(withId movieId: String, country: String = "US") -> URL {
+        var components = baseURLComponents()
+        components.path = "/lookup"
+        components.queryItems = [
+            URLQueryItem(name: "country", value: country),
+            URLQueryItem(name: "id", value: movieId)
+        ]
+        
+        return components.url!
+    }
 }

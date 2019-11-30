@@ -9,6 +9,12 @@
 import Foundation
 
 struct Movie {
+    
+    // MARK: - Constants
+    private enum Constants {
+        static let apiURLImageSize = "400x300"
+    }
+    
     // MARK: - Properties
     let movieId: String
     let title: String
@@ -20,6 +26,7 @@ struct Movie {
     let numberOfReviews: Int?
     let price: Float?
     
+    // MARK: - Initialization
     init(movieId: String, title: String, directors: [String]? = nil, releaseDate: Date? = nil, description: String? = nil, coverURL: URL? = nil, ratings: Float? = nil, numberOfReviews: Int? = nil, price: Float? = nil) {
         self.movieId = movieId
         self.title = title
@@ -66,7 +73,12 @@ extension Movie: Codable {
         }
         
         description = try container.decodeIfPresent(String.self, forKey: .description)
-        coverURL = try container.decodeIfPresent(URL.self, forKey: .coverURL)
+        
+        // Parsing to String for replace image Size and return as URL
+        self.coverURL = try container.decodeIfPresent(URL.self, forKey: .coverURL)?
+            .absoluteString
+            .replacingOccurrences(of: "100x100", with: Constants.apiURLImageSize)
+            .asURL()
         
         ratings = nil
         numberOfReviews = nil
@@ -82,7 +94,7 @@ extension Movie: MediaItemProvidable {
     }
     
     var imageURL: URL? {
-        return nil
+        return coverURL
     }
     
 }

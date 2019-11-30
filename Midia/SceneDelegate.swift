@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 fatalError("Wrong initial setup")
             }
         
-        let currentMediaItemProvider = MediaItemProvider(withMediaItemKind: .book)
+        let currentMediaItemProvider = MediaItemProvider(withMediaItemKind: .movie)
         homeViewController.mediaItemProvider = currentMediaItemProvider
         searchViewController.mediaItemProvider = currentMediaItemProvider
         

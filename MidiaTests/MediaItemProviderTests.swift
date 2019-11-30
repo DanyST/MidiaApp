@@ -26,7 +26,6 @@ final class MockMediaItemAPIConsumer: MediaItemAPIConsumable {
 
 final class MockMediaItem: MediaItemProvidable {
     let mediaItemId: String = "1"
-    
     let title: String = "A title"
     var imageURL: URL? = nil
 }
