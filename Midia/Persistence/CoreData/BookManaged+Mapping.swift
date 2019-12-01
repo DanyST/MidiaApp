@@ -13,7 +13,6 @@ extension BookManaged {
     
     func mappedObject() -> Book {
         let authors: [String]? = {
-            // TODO: validar authors con mas de 0 elementos
             guard let authorsArray = self.authors?.allObjects as? [Author], !authorsArray.isEmpty else { return nil }
             let creatorsName = authorsArray.map { $0.fullName! } // fullName is required in dataModel
             return creatorsName

@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Author" representedClassName="Author" syncable="YES" codeGenerationType="class">
-        <attribute name="fullName" attributeType="String"/>
+    <entity name="Author" representedClassName="Author" parentEntity="PersonEntity" syncable="YES" codeGenerationType="class">
         <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="authors" inverseEntity="Book"/>
     </entity>
-    <entity name="Book" representedClassName="BookManaged" syncable="YES" codeGenerationType="class">
+    <entity name="Book" representedClassName="BookManaged" parentEntity="MediaEntity" syncable="YES" codeGenerationType="class">
         <attribute name="bookDescription" optional="YES" attributeType="String"/>
         <attribute name="bookId" attributeType="String"/>
-        <attribute name="coverURL" optional="YES" attributeType="String"/>
-        <attribute name="numberOfReviews" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
-        <attribute name="price" optional="YES" attributeType="Float" minValueString="1" usesScalarValueType="YES"/>
         <attribute name="publishedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="rating" optional="YES" attributeType="Float" usesScalarValueType="YES"/>
-        <attribute name="title" attributeType="String"/>
         <relationship name="authors" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Author" inverseName="book" inverseEntity="Author"/>
     </entity>
+    <entity name="Director" representedClassName="Director" parentEntity="PersonEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="movie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Movie" inverseName="directors" inverseEntity="Movie"/>
+    </entity>
+    <entity name="MediaEntity" representedClassName="MediaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="coverURL" optional="YES" attributeType="String"/>
+        <attribute name="numberOfReviews" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <entity name="Movie" representedClassName="MovieManaged" parentEntity="MediaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="movieDescription" optional="YES" attributeType="String"/>
+        <attribute name="movieId" attributeType="String"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="directors" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Director" inverseName="movie" inverseEntity="Director"/>
+    </entity>
+    <entity name="PersonEntity" representedClassName="PersonEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="fullName" attributeType="String"/>
+    </entity>
     <elements>
-        <element name="Author" positionX="208.5078125" positionY="-233.140625" width="128" height="73"/>
-        <element name="Book" positionX="-89.33203125" positionY="-145.76953125" width="128" height="178"/>
+        <element name="Author" positionX="-301.5546875" positionY="2.3046875" width="128" height="58"/>
+        <element name="Book" positionX="-325.06640625" positionY="-312.51171875" width="128" height="103"/>
+        <element name="MediaEntity" positionX="-237.66015625" positionY="-499.0390625" width="128" height="118"/>
+        <element name="Movie" positionX="-145.71875" positionY="-312.953125" width="128" height="103"/>
+        <element name="Director" positionX="-1.28125" positionY="-8.6015625" width="128" height="58"/>
+        <element name="PersonEntity" positionX="-143.17578125" positionY="-148.5703125" width="128" height="58"/>
     </elements>
 </model>

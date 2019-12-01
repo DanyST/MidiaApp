@@ -9,13 +9,11 @@
 import Foundation
 import CoreData
 
-// TODO: capa de abstraccion para usar siempre media items
-
 final class CoreDataStorageManager: FavoritesProvidable {
     
     // MARK: - Properties
-    let mediaItemKind: MediaItemKind
-    let stack = CoreDataStack.sharedInstance
+    private let mediaItemKind: MediaItemKind
+    private let stack = CoreDataStack.sharedInstance
     
     // MARK: - Initialization
     init(withMediaItemKind mediaItemKind: MediaItemKind) {
@@ -25,11 +23,25 @@ final class CoreDataStorageManager: FavoritesProvidable {
     // MARK: - Methods
     func getFavorites() -> [MediaItemDetailedProvidable]? {
         let context = stack.persistenceContainer.viewContext
-        
+                        
         switch mediaItemKind {
-        case .book:
+        case .book:            
             let fetchRequest: NSFetchRequest<BookManaged> = BookManaged.fetchRequest()
             let dateSortDescriptor = NSSortDescriptor(key: "publishedDate", ascending: false)
+            let priceSortDescriptor = NSSortDescriptor(key: "price", ascending: false)
+            fetchRequest.sortDescriptors = [dateSortDescriptor, priceSortDescriptor]
+            
+            do {
+                let favorites = try context.fetch(fetchRequest)
+                return favorites.map { $0.mappedObject() }
+            } catch {
+                assertionFailure("Error fetching media items") // assertionFailure solo funciona en debug
+                return nil
+            }
+            
+        case .movie:
+            let fetchRequest: NSFetchRequest<MovieManaged> = MovieManaged.fetchRequest()
+            let dateSortDescriptor = NSSortDescriptor(key: "releaseDate", ascending: false)
             let priceSortDescriptor = NSSortDescriptor(key: "price", ascending: false)
             fetchRequest.sortDescriptors = [dateSortDescriptor, priceSortDescriptor]
             
@@ -62,6 +74,20 @@ final class CoreDataStorageManager: FavoritesProvidable {
                 assertionFailure("Error fetching media item by id \(favoriteId)") // assertionFailure solo funciona en debug
                 return nil
             }
+            
+        case .movie:
+            let fetchRequest: NSFetchRequest<MovieManaged> = MovieManaged.fetchRequest()
+            let idPredicate = NSPredicate(format: "movieId = %@", favoriteId)  // id filter
+            fetchRequest.predicate = idPredicate
+
+            do {
+                let favorites = try context.fetch(fetchRequest)
+                return favorites.last?.mappedObject()
+            } catch {
+                assertionFailure("Error fetching media item by id \(favoriteId)")
+                return nil
+            }
+            
         default:
              fatalError("Not supported yet :(")
         }
@@ -73,14 +99,17 @@ final class CoreDataStorageManager: FavoritesProvidable {
         
         switch mediaItemKind {
         case .book:
-            
             // created BookManaged with mapping a media item book
             let _ = BookManaged(withMediaItemBook: favorite as! Book, context: context)
+            
+        case .movie:
+            let _ = MovieManaged(withMediaItemMovie: favorite as! Movie, context: context)
+            
         default:
             fatalError("Not supported yet :(")
         }
         
-        // Save changes
+        // Save changes for context
         do {
             try context.save()
         } catch {
@@ -106,6 +135,21 @@ final class CoreDataStorageManager: FavoritesProvidable {
             } catch  {
                 assertionFailure("Error saving media item with id \(favoriteId)")
             }
+        
+        case .movie:
+            let fetchRequest: NSFetchRequest<MovieManaged> = MovieManaged.fetchRequest()
+            let idPredicate = NSPredicate(format: "movieId = %@", favoriteId)  // id filter
+            fetchRequest.predicate = idPredicate
+
+            do {
+                let favorites = try context.fetch(fetchRequest)
+                favorites.forEach { context.delete($0) }
+                
+                try context.save()
+            } catch  {
+                assertionFailure("Error saving media item with id \(favoriteId)")
+            }
+            
         default:
             fatalError("Not supported yet :(")
         }
