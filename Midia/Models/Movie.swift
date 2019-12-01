@@ -49,8 +49,6 @@ extension Movie: Codable {
         case releaseDate
         case description = "longDescription"
         case coverURL = "artworkUrl100"
-        case ratings
-        case numberOfReviews
         case price = "trackPrice"
     }
     
@@ -85,12 +83,28 @@ extension Movie: Codable {
         price = try container.decodeIfPresent(Float.self, forKey: .price)
     }
     
+    // MARK: - Encodable Method
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(Int(movieId), forKey: .movieId)
+        try container.encode(title, forKey: .title)
+        try container.encode(directors?.joined(separator: ","), forKey: .directors)
+        
+        if let releaseDate = releaseDate {
+             try container.encode(DateFormatter.iTunesAPIDateFormatter.string(from: releaseDate), forKey: .releaseDate)
+        }
+       
+        try container.encode(description, forKey: .description)
+        try container.encode(coverURL?.absoluteString, forKey: .coverURL)        
+    }
+    
 }
 
 // MARK: - MediaItemProvidable Protocol
 extension Movie: MediaItemProvidable {
     var mediaItemId: String {
-        return "\(movieId)"
+        return movieId
     }
     
     var imageURL: URL? {

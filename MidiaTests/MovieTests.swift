@@ -11,15 +11,17 @@ import XCTest
 
 class MovieTests: XCTestCase {
     var decoder: JSONDecoder!
+    var encoder: JSONEncoder!
     
     var coverURL: URL!
     var movie: Movie!
 
     override func setUp() {
         decoder = JSONDecoder()
+        encoder = JSONEncoder()
         
         coverURL = URL(string: "https://is4-ssl.mzstatic.com/image/thumb/Video118/v4/5f/e3/74/5fe3749a-bc9b-f129-53e0-649c7c487fa0/source/100x100bb.jpg")
-        movie = Movie(movieId: "1", title: "Spider-Man: Far From Home", directors: ["Jon Watts"], releaseDate: Date(timeIntervalSinceNow: 23312), description: "", coverURL: coverURL, ratings: 5, numberOfReviews: 10, price: 5.99)
+        movie = Movie(movieId: "1", title: "Spider-Man: Far From Home", directors: ["Jon Watts"], releaseDate: Date(timeIntervalSinceNow: 23312), description: "Amazing", coverURL: coverURL, price: 5.99)
     }
     
     func testMovieExistence() {
@@ -40,6 +42,36 @@ class MovieTests: XCTestCase {
             XCTAssertNotNil(firstMovie)
             XCTAssertNotNil(firstMovie?.movieId)
             XCTAssertNotNil(firstMovie?.title)
+        } catch {
+            XCTFail()
+        }
+    }
+    
+    func testEncodeMovie() {
+        do {
+            let movieData = try encoder.encode(movie)
+            XCTAssertNotNil(movieData)
+        } catch {
+            XCTFail()
+        }
+    }
+    
+    func testDecodeEncodeDetailedMovie() {
+        do {
+            let movieData = try encoder.encode(movie)
+            XCTAssertNotNil(movieData)
+
+            let movie = try decoder.decode(Movie.self, from: movieData)
+            XCTAssertNotNil(movie)
+
+            XCTAssertNotNil(movie.movieId)
+            XCTAssertNotNil(movie.title)
+            XCTAssertNotNil(movie.directors)
+            XCTAssertEqual(movie.directors?.count, 1)
+            XCTAssertNotNil(movie.releaseDate)
+            XCTAssertNotNil(movie.description)
+            XCTAssertNotNil(movie.coverURL)
+            
         } catch {
             XCTFail()
         }
