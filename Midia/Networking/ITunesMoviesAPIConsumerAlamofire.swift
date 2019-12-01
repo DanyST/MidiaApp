@@ -15,7 +15,7 @@ final class ITunesMoviesAPIConsumerAlamofire: MediaItemAPIConsumable {
     
     func getLatestMediaItems(completion: @escaping (Swift.Result<[MediaItemProvidable], Error>) -> Void) {
         
-        let url = ITunesMoviesAPIConstants.getAbsoluteURL(withQueryParams: ["trending"])
+        let url = ITunesMoviesAPIConstants.getAbsoluteURL(withQueryParams: ["top"])
         Alamofire.request(url).responseData { [unowned self] (response) in
             
             switch response.result {

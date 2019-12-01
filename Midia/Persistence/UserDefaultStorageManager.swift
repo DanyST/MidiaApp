@@ -11,12 +11,12 @@ import Foundation
 final class UserDefaultStorageManager: FavoritesProvidable {
     
     // MARK: - Properties
-    let userDefaults = UserDefaults.standard
-    let mediaItemKind: MediaItemKind
-    let favoritesKey: String
+    private let userDefaults = UserDefaults.standard
+    private let mediaItemKind: MediaItemKind
+    private let favoritesKey: String
     
-    let encoder = JSONEncoder()
-    let decoder = JSONDecoder()
+    private let encoder = JSONEncoder()
+    private let decoder = JSONDecoder()
     
     // MARK: - Initialization
     init(withMediaItemKind mediaItemKind: MediaItemKind) {
@@ -33,6 +33,8 @@ final class UserDefaultStorageManager: FavoritesProvidable {
         switch mediaItemKind {
         case .book:
             return try? decoder.decode([Book].self, from: favoritesData)
+        case .movie:
+            return try? decoder.decode([Movie].self, from: favoritesData)
         default:
             fatalError("Media Kind \(mediaItemKind) not supported yet :(")
         }
@@ -74,7 +76,7 @@ final class UserDefaultStorageManager: FavoritesProvidable {
     private func save(favorites: [MediaItemDetailedProvidable]) {
         switch mediaItemKind {
         case .book:
-            // Convertir favorites como [Book] a Data
+            // Convertir favorites de [Book] a Data
             guard let favoritesData = try? encoder.encode(favorites as? [Book]) else {
                 fatalError("error encoding favorites")
             }
@@ -82,6 +84,16 @@ final class UserDefaultStorageManager: FavoritesProvidable {
             // Guardar nuevo Data en UserDefaults
             userDefaults.set(favoritesData, forKey: favoritesKey)
             userDefaults.synchronize()
+            
+        case .movie:
+            // Convertir favorites de [Movie] a Data
+            guard let favoritesData = try? encoder.encode(favorites as? [Movie]) else {
+                fatalError("error encoding favorites")
+            }
+            
+            userDefaults.set(favoritesData, forKey: favoritesKey)
+            userDefaults.synchronize()
+            
         default:
             fatalError("Media Kind \(mediaItemKind) not supported yet :(")
         }

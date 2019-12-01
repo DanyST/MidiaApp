@@ -10,6 +10,6 @@ import Foundation
 
 final class StorageManager {
     
-//    static let shared = UserDefaultStorageManager(withMediaItemKind: .book)
-    static let shared = CoreDataStorageManager(withMediaItemKind: .book)
+    static let shared = UserDefaultStorageManager(withMediaItemKind: .movie)
+//    static let shared = CoreDataStorageManager(withMediaItemKind: .book)
 }

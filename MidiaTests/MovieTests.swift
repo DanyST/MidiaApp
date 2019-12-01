@@ -76,5 +76,28 @@ class MovieTests: XCTestCase {
             XCTFail()
         }
     }
+    
+    func testPersistOnUserDefaults() {
+        let userDefaults = UserDefaults(suiteName: "tests")!
+        let movieKey = "movieKey"
+        
+        do {
+            let movieData = try encoder.encode(movie)
+            userDefaults.set(movieData, forKey: movieKey)
+            userDefaults.synchronize()
+            
+            guard let retrieveMovieData = userDefaults.data(forKey: movieKey) else {
+                XCTFail()
+                return
+            }
+            
+            let movie = try decoder.decode(Movie.self, from: retrieveMovieData)
+            XCTAssertNotNil(movie)
+                        
+        } catch  {
+            XCTFail()
+        }
+       
+    }
 
 }
