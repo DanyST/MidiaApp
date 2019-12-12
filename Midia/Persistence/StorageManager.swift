@@ -10,6 +10,13 @@ import Foundation
 
 final class StorageManager {
     
-//    static let shared = UserDefaultStorageManager(withMediaItemKind: .movie)
-    static let shared = CoreDataStorageManager(withMediaItemKind: .movie)
+    // MARK: - Properties
+    
+    static var shared = MidiaAppInitialConfigurationConstants.storageManagerKind.instance(withMediaItemKind: MidiaAppInitialConfigurationConstants.mediaItemKind)
+    
+    // MARK: - Methods
+    
+    static func setup(withMediaItemKind mediaItemKind: MediaItemKind) {
+        shared = MidiaAppInitialConfigurationConstants.storageManagerKind.instance(withMediaItemKind: mediaItemKind)
+    }
 }

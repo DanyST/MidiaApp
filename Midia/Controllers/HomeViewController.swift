@@ -67,7 +67,16 @@ class HomeViewController: UIViewController {
         // Asiganmos delegados
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        loadMediaItems()
+    }
+}
 
+
+// MARK: - Methods
+extension HomeViewController {
+    
+    private func loadMediaItems() {
         self.state = .loading
         mediaItemProvider.getHomeMediaItems { [unowned self] (result) in
             switch result {
@@ -80,9 +89,14 @@ class HomeViewController: UIViewController {
                 break
             }
         }
-        
+    }
+    
+    func reset() {
+        self.mediaItems = []
+        self.loadMediaItems()
     }
 }
+
 
 // MARK: - UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {

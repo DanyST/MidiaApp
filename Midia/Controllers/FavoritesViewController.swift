@@ -28,7 +28,7 @@ class FavoritesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // cargar los favorites
+//         cargar los favorites
         loadFavorites()
     }
     
@@ -36,12 +36,17 @@ class FavoritesViewController: UIViewController {
 
 // MARK: - Methods
 extension FavoritesViewController {
-    func loadFavorites() {
+    private func loadFavorites() {
         // coger los favoritos desde el storage manager
-        guard let storedFavorites = StorageManager.shared.getFavorites() else  { return }
+        guard let storedFavorites = StorageManager.shared.getFavorites(), tableView != nil else { return }
         
         self.favorites = storedFavorites
         self.tableView.reloadData()
+    }
+    
+    func reset() {
+        self.favorites = []
+        self.loadFavorites()
     }
 }
 

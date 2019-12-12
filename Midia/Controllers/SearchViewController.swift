@@ -30,6 +30,19 @@ class SearchViewController: UIViewController {
     }
 }
 
+// MARK: - Methods
+extension SearchViewController {
+    
+    func reset() {
+        guard collectionView != nil else { return }
+        
+        mediaItems = []
+        collectionView.reloadData()
+        searchBar.text = ""
+    }
+}
+
+
 // MARK: - UICollectionViewDelegate
 extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
