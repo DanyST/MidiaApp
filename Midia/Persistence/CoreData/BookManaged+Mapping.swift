@@ -9,6 +9,12 @@
 import Foundation
 import CoreData
 
+// MARK: Constants
+extension BookManaged {
+    static let entityName: String = "Book"
+}
+
+// MARK: Methods
 extension BookManaged {
     
     func mappedObject() -> Book {
@@ -27,42 +33,48 @@ extension BookManaged {
         return book
     }
     
+}
+
+// MARK: Convenience init with book
+extension BookManaged {
+    
     convenience init(withMediaItemBook mediaItemBook: Book, context: NSManagedObjectContext) {
         // NSEntityDescription de BookManaged
-        let book = BookManaged.entity()
-        
+        guard let book = NSEntityDescription.entity(forEntityName: BookManaged.entityName, in: context) else {
+            fatalError("invalid entity name string: \(BookManaged.entityName)")
+        }
+
         // Init designado
         self.init(entity: book, insertInto: context)
-        
+
         // Darle valor a las propiedades de la instancia self
         self.bookId = mediaItemBook.bookId
         self.title = mediaItemBook.title
         self.bookDescription = mediaItemBook.description
         self.publishedDate = mediaItemBook.publishedDate
         self.coverURL = mediaItemBook.imageURL?.absoluteString
-        
+
         if let numberOfReviews = mediaItemBook.numberOfReviews {
-            self.numberOfReviews = Int32(numberOfReviews)
+           self.numberOfReviews = Int32(numberOfReviews)
         }
-        
+
         if let rating = mediaItemBook.ratings {
-            self.rating = rating
+           self.rating = rating
         }
-        
+
         if let price = mediaItemBook.price {
-            self.price = price
+           self.price = price
         }
 
         mediaItemBook.authors?.forEach({ authorName in
             // Crear el una instancia de author
             let author = Author(context: context)
-            
+
             // Darle valor
             author.fullName = authorName
-            
+
             // Añadirlo a la lista de authors de self
             self.addToAuthors(author)
         })
     }
-    
 }

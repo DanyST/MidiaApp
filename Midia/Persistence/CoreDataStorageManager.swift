@@ -13,11 +13,12 @@ final class CoreDataStorageManager: FavoritesProvidable {
     
     // MARK: - Properties
     private let mediaItemKind: MediaItemKind
-    private let stack = CoreDataStack.sharedInstance
+    private let stack: CoreDataStackProvidable
     
     // MARK: - Initialization
-    init(withMediaItemKind mediaItemKind: MediaItemKind) {
+    init(withMediaItemKind mediaItemKind: MediaItemKind, coreDataStack: CoreDataStackProvidable = CoreDataStack.sharedInstance) {
         self.mediaItemKind = mediaItemKind
+        self.stack = coreDataStack
     }
     
     // MARK: - Methods

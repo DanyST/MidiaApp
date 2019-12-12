@@ -9,6 +9,12 @@
 import Foundation
 import CoreData
 
+// MARK: Constants
+extension MovieManaged {
+    static let entityName: String = "Movie"
+}
+
+// MARK: Methods
 extension MovieManaged {
     
     func mappedObject() -> Movie {
@@ -26,10 +32,16 @@ extension MovieManaged {
        
        return movie
     }
+}
 
+// MARK: Init Convenience with movie
+extension MovieManaged {
+    
     convenience init(withMediaItemMovie mediaItemMovie: Movie, context: NSManagedObjectContext) {
         // NSEntityDescription de MovieManaged
-        let movie = MovieManaged.entity()
+        guard let movie = NSEntityDescription.entity(forEntityName: MovieManaged.entityName, in: context) else {
+            fatalError("invalid entity name string: \(MovieManaged.entityName)")
+        }
 
         // Init designado
         self.init(entity: movie, insertInto: context)

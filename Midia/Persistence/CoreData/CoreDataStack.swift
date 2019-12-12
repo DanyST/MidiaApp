@@ -9,7 +9,12 @@
 import Foundation
 import CoreData
 
-final class CoreDataStack {
+protocol CoreDataStackProvidable {
+    var persistenceContainer: NSPersistentContainer { get }
+}
+
+
+final class CoreDataStack: CoreDataStackProvidable {
     
     // Singleton
     static let sharedInstance = CoreDataStack()

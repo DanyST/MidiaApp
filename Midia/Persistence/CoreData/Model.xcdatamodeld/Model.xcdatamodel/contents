@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Author" representedClassName="Author" parentEntity="PersonEntity" syncable="YES" codeGenerationType="class">
         <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="authors" inverseEntity="Book"/>
     </entity>
@@ -31,9 +31,9 @@
     <elements>
         <element name="Author" positionX="-301.5546875" positionY="2.3046875" width="128" height="58"/>
         <element name="Book" positionX="-325.06640625" positionY="-312.51171875" width="128" height="103"/>
+        <element name="Director" positionX="-1.28125" positionY="-8.6015625" width="128" height="58"/>
         <element name="MediaEntity" positionX="-237.66015625" positionY="-499.0390625" width="128" height="118"/>
         <element name="Movie" positionX="-145.71875" positionY="-312.953125" width="128" height="103"/>
-        <element name="Director" positionX="-1.28125" positionY="-8.6015625" width="128" height="58"/>
         <element name="PersonEntity" positionX="-143.17578125" positionY="-148.5703125" width="128" height="58"/>
     </elements>
 </model>
