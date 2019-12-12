@@ -75,6 +75,9 @@ extension SearchViewController: UICollectionViewDataSource {
 extension SearchViewController: UISearchBarDelegate {
     // TODO: hacer la busqueda, pintar los resultados
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // dismiss keyboard
+        searchBar.resignFirstResponder()
+        
         // Podriamos añadir delimitaciones de caracteres especiales
         guard let userText = searchBar.text,
             userText.count > 0 else { return }
@@ -93,6 +96,12 @@ extension SearchViewController: UISearchBarDelegate {
                 self.activityIndicator.isHidden = true
                 break
             }
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.reset()
         }
     }
 }
