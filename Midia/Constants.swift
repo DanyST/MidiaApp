@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct GoogleBooksAPIConstants {
+enum MidiaAppInitialConfigurationConstants {
+    static let mediaItemKind: MediaItemKind = .movie
+    static let storageManagerKind: StorageManagerKind = .coreData
+}
+
+enum GoogleBooksAPIConstants {
     
     private static let apiKey: String = {
         guard let path = Bundle.main.path(forResource: "keys", ofType: "plist"),
@@ -45,7 +50,7 @@ struct GoogleBooksAPIConstants {
     }
 }
 
-struct ITunesMoviesAPIConstants {
+enum ITunesMoviesAPIConstants {
     
     private static func baseURLComponents() -> URLComponents{
         var components = URLComponents()
